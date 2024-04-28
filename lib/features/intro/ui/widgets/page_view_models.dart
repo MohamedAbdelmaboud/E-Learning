@@ -1,4 +1,4 @@
-import 'package:e_learning/common/utils/app_images.dart';
+import 'package:e_learning/common/utils/assets.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';

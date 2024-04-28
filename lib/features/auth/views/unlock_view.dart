@@ -1,4 +1,4 @@
-import 'package:e_learning/common/utils/app_images.dart';
+import 'package:e_learning/common/utils/assets.dart';
 import 'package:e_learning/common/widgets/custom_button.dart';
 import 'package:e_learning/features/intro/ui/widgets/body_widget.dart';
 import 'package:e_learning/features/intro/ui/widgets/title_widget.dart';

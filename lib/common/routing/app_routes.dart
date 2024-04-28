@@ -1,13 +1,17 @@
-import 'package:e_learning/features/home/view/views/home_view.dart';
-import 'package:e_learning/features/intro/views/on_boarding_view.dart';
-import 'package:e_learning/features/splash/view/views/splash_view.dart';
+import 'package:e_learning/features/auth/login/ui/views/login_view.dart';
+import 'package:e_learning/features/auth/login/ui/views/unlock_view.dart';
+import 'package:e_learning/features/home/ui/views/home_view.dart';
+import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
+import 'package:e_learning/features/splash/ui/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
   static String splashView = '/';
-  static String homeView = '/HomeView';
-  static String onBoardingView = '/OnboardingView';
+  static String homeView = '/homeView';
+  static String onBoardingView = '/onBoardingView';
+  static String loginView = '/loginView';
+  static String unlockView = '/unlockView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
@@ -18,6 +22,12 @@ class AppRouter {
         path: onBoardingView,
         builder: (context, state) => const OnBoardingView(),
       ),
+      GoRoute(
+        path: loginView,
+        builder: (context, state) => const LoginView(),
+      ),
+      GoRoute(
+          path: unlockView, builder: (context, state) => const UnlockView()),
       GoRoute(
         path: homeView,
         pageBuilder: (context, state) {

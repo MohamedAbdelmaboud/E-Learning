@@ -1,3 +1,4 @@
+import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppStyles {
@@ -17,13 +18,17 @@ abstract class AppStyles {
   );
 
   static TextStyle regular14 = _regular(
-    color: const Color(0xFFAAAAAA),
+    color: AppColors.secondaryColor,
     fontSize: 14,
   );
 
   static TextStyle regular16 = _regular(
-    color: const Color(0xFF064061),
+    color: AppColors.greyColor,
     fontSize: 16,
+  );
+ static TextStyle regular18 = _regular(
+    color: AppColors.secondaryColor,
+    fontSize: 18,
   );
 
   // Medium
@@ -90,4 +95,13 @@ abstract class AppStyles {
     color: const Color(0xFF4EB7F2),
     fontSize: 16,
   );
+  static TextStyle bold20 = bold(
+    color:  AppColors.secondaryColor,
+    fontSize: 20,
+  );
+   static TextStyle bold24 = bold(
+    color:  AppColors.secondaryColor,
+    fontSize: 24,
+  );
+
 }

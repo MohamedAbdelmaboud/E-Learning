@@ -13,6 +13,10 @@ class Assets {
   /// assets/images/Onlinelearning-amico.svg
   static const String assetsImagesOnlinelearningAmico = "assets/images/Onlinelearning-amico.svg";
 
+  /// Assets for assetsImagesUnlock
+  /// assets/images/unlock.svg
+  static const String assetsImagesUnlock = "assets/images/unlock.svg";
+
   /// Assets for assetsImagesWebinarRafiki
   /// assets/images/Webinar-rafiki.svg
   static const String assetsImagesWebinarRafiki = "assets/images/Webinar-rafiki.svg";

@@ -1,5 +1,8 @@
+import 'package:e_learning/common/routing/app_routes.dart';
+import 'package:e_learning/common/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -11,9 +14,9 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
-    // Future.delayed(const Duration(seconds: 3), () {
-    //   context.go(AppRouter.homeView);
-    // });
+    Future.delayed(const Duration(seconds: 2), () {
+      context.go(AppRouter.onBoardingView);
+    });
     super.initState();
   }
 
@@ -42,7 +45,7 @@ class SplashViewBody extends StatelessWidget {
           ])),
       child: Center(
         child: SvgPicture.asset(
-          'assets/images/logo.svg',
+          Assets.assetsImagesLogo,
           height: 140,
         ),
       ),

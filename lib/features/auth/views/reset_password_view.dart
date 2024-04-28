@@ -1,6 +1,6 @@
 import 'package:e_learning/common/widgets/custom_app_bar.dart';
-import 'package:e_learning/features/auth/views/widgets/sign_in_hint_text.dart';
-import 'package:e_learning/features/auth/views/widgets/sign_in_text.dart';
+import 'package:e_learning/features/auth/views/widgets/head_text.dart';
+import 'package:e_learning/features/auth/views/widgets/hint_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -23,7 +23,6 @@ class ResetPasswordView extends StatelessWidget {
             Gap(20),
             HintText(
                 'Reset your password to regain access to your learning journey.'),
-            
           ],
         ),
       ),

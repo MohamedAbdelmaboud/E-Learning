@@ -1,4 +1,6 @@
 import 'package:e_learning/common/widgets/custom_app_bar.dart';
+import 'package:e_learning/features/auth/views/widgets/head_text.dart';
+import 'package:e_learning/features/auth/views/widgets/hint_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -6,8 +8,6 @@ import 'widgets/email_text_field.dart';
 import 'widgets/forget_password.dart';
 import 'widgets/or_sign_in_with_text.dart';
 import 'widgets/password_text_field.dart';
-import 'widgets/sign_in_hint_text.dart';
-import 'widgets/sign_in_text.dart';
 import 'widgets/sign_in_text_button.dart';
 import 'widgets/sign_in_with_face_book.dart';
 import 'widgets/sign_in_with_google.dart';

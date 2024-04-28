@@ -3,8 +3,9 @@ import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class OrSignInWithText extends StatelessWidget {
-  const OrSignInWithText({super.key});
+class CustomDivider extends StatelessWidget {
+  const CustomDivider(this.text, {super.key});
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class OrSignInWithText extends StatelessWidget {
         ),
         const Gap(15),
         Text(
-          'Or Sign in with',
+          text,
           style: AppStyles.semiBold16.copyWith(
             color: AppColors.primaryColor,
           ),

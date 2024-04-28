@@ -6,6 +6,32 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 
 class CustomTextButtonBuilder {
+  static regular({
+    required String text,
+    required Function() onTap,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      child: Text(
+        text,
+        style: AppStyles.regular12,
+      ),
+    );
+  }
+
+  static bold({
+    required String text,
+    required Function() onTap,
+  }) {
+    return InkWell(
+      onTap: onTap,
+      child: Text(
+        text,
+        style: AppStyles.bold12,
+      ),
+    );
+  }
+
   static normalWithText({
     required String text,
     required Function() onTap,

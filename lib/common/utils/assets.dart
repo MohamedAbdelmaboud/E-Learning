@@ -1,6 +1,14 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesFacebookLogo
+  /// assets/images/facebook_logo.svg
+  static const String assetsImagesFacebookLogo = "assets/images/facebook_logo.svg";
+
+  /// Assets for assetsImagesGoogleLogo
+  /// assets/images/google_logo.svg
+  static const String assetsImagesGoogleLogo = "assets/images/google_logo.svg";
+
   /// Assets for assetsImagesLearningBro
   /// assets/images/Learning-bro.svg
   static const String assetsImagesLearningBro = "assets/images/Learning-bro.svg";

@@ -26,7 +26,8 @@ abstract class AppStyles {
     color: AppColors.greyColor,
     fontSize: 16,
   );
- static TextStyle regular18 = _regular(
+
+  static TextStyle regular18 = _regular(
     color: AppColors.secondaryColor,
     fontSize: 18,
   );
@@ -40,6 +41,16 @@ abstract class AppStyles {
       fontWeight: FontWeight.w500,
     );
   }
+
+  static TextStyle medium12 = _medium(
+    color: AppColors.secondaryColor,
+    fontSize: 12,
+  );
+
+  static TextStyle medium13 = _medium(
+    color: AppColors.primaryColor,
+    fontSize: 13,
+  );
 
   static TextStyle medium16 = _medium(
     color: const Color(0xFF064061),
@@ -91,17 +102,31 @@ abstract class AppStyles {
     );
   }
 
-  static TextStyle bold16 = bold(
-    color: const Color(0xFF4EB7F2),
-    fontSize: 16,
+  static TextStyle bold12 = bold(
+    color: AppColors.primaryColor,
+    fontSize: 12,
   );
-  static TextStyle bold20 = bold(
-    color:  AppColors.secondaryColor,
-    fontSize: 20,
-  );
-   static TextStyle bold24 = bold(
-    color:  AppColors.secondaryColor,
-    fontSize: 24,
+  static TextStyle bold14 = bold(
+    color: AppColors.primaryColor,
+    fontSize: 14,
   );
 
+  static TextStyle bold16 = bold(
+    color: AppColors.greyColor,
+    fontSize: 16,
+  );
+
+  static TextStyle bold20 = bold(
+    color: AppColors.secondaryColor,
+    fontSize: 20,
+  );
+  static TextStyle bold21 = bold(
+    color: AppColors.primaryColor,
+    fontSize: 21,
+  );
+
+  static TextStyle bold24 = bold(
+    color: AppColors.secondaryColor,
+    fontSize: 24,
+  );
 }

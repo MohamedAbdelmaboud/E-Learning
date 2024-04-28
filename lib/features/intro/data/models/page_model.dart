@@ -1,4 +1,5 @@
-import 'package:e_learning/common/utils/app_images.dart';
+
+import '../../../../common/utils/assets.dart';
 
 class PageModel {
   final String imagePath;

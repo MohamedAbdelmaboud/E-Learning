@@ -1,5 +1,6 @@
-import 'package:e_learning/features/auth/login/ui/views/login_view.dart';
-import 'package:e_learning/features/auth/login/ui/views/unlock_view.dart';
+import 'package:e_learning/features/auth/views/reset_password_view.dart';
+import 'package:e_learning/features/auth/views/sign_in_view.dart';
+import 'package:e_learning/features/auth/views/unlock_view.dart';
 import 'package:e_learning/features/home/ui/views/home_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/splash/ui/views/splash_view.dart';
@@ -12,11 +13,13 @@ class AppRouter {
   static String onBoardingView = '/onBoardingView';
   static String loginView = '/loginView';
   static String unlockView = '/unlockView';
+  static String signInView = '/signInView';
+  static String resetPasswordView = '/resetPasswordView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
-        builder: (context, state) => const SplashView(),
+        builder: (context, state) => const ResetPasswordView(),
       ),
       GoRoute(
         path: onBoardingView,
@@ -24,7 +27,7 @@ class AppRouter {
       ),
       GoRoute(
         path: loginView,
-        builder: (context, state) => const LoginView(),
+        builder: (context, state) => const SignInView(),
       ),
       GoRoute(
           path: unlockView, builder: (context, state) => const UnlockView()),

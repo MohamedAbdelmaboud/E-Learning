@@ -4,7 +4,7 @@ import 'package:e_learning/features/intro/ui/widgets/title_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'widgets/reset_password_view.dart';
+import '../widgets/sign_buttons.dart';
 
 class UnlockView extends StatelessWidget {
   const UnlockView({super.key});

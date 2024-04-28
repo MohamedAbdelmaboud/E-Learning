@@ -1,10 +1,8 @@
 import 'package:e_learning/common/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
-class PasswordTextField extends StatelessWidget {
-  const PasswordTextField({
-    super.key,
-  });
+class SignUpPasswordTextField extends StatelessWidget {
+  const SignUpPasswordTextField({super.key});
 
   @override
   Widget build(BuildContext context) {

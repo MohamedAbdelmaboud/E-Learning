@@ -2,8 +2,8 @@ import 'package:e_learning/common/utils/assets.dart';
 import 'package:e_learning/common/widgets/custom_text_button_builder.dart';
 import 'package:flutter/material.dart';
 
-class SignInWithFaceBook extends StatelessWidget {
-  const SignInWithFaceBook({super.key});
+class SignInWithFacebook extends StatelessWidget {
+  const SignInWithFacebook({super.key});
 
   @override
   Widget build(BuildContext context) {

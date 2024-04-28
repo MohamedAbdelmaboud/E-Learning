@@ -26,7 +26,7 @@ class SignButtons extends StatelessWidget {
           text: 'Sign up',
           width: MediaQuery.sizeOf(context).width * 0.40,
           onTap: () {
-            //context.push(AppRouter.signUpView);
+            context.push(AppRouter.signUpView);
           },
         ),
       ],

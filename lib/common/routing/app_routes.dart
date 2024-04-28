@@ -1,11 +1,15 @@
-import 'package:e_learning/features/auth/views/sign_in_view.dart';
-import 'package:e_learning/features/auth/views/unlock_view.dart';
+import 'package:e_learning/features/auth/ui/views/reset_password_view.dart';
+import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
+import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
-import 'package:e_learning/features/layout/home/ui/views/home_view.dart';
-import 'package:e_learning/features/layout/home/ui/views/notifications_view.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
+import 'package:e_learning/features/splash/ui/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import '../../features/auth/ui/views/sign_in_view.dart';
+import '../../features/layout/home/ui/views/home_view.dart';
+import '../../features/layout/home/ui/views/notifications_view.dart';
 
 class AppRouter {
   static String splashView = '/';
@@ -13,6 +17,7 @@ class AppRouter {
   static String onBoardingView = '/onBoardingView';
   static String unlockView = '/unlockView';
   static String signInView = '/signInView';
+  static String signUpView = '/signUpView';
   static String resetPasswordView = '/resetPasswordView';
   static String inboxView = '/inboxView';
   static String notificationsView = '/notificationsView';
@@ -20,7 +25,7 @@ class AppRouter {
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
-        builder: (context, state) => const NotificationsView(),
+        builder: (context, state) => const SplashView(),
       ),
       GoRoute(
         path: onBoardingView,
@@ -29,6 +34,14 @@ class AppRouter {
       GoRoute(
         path: signInView,
         builder: (context, state) => const SignInView(),
+      ),
+      GoRoute(
+        path: signUpView,
+        builder: (context, state) => const SignUpView(),
+      ),
+      GoRoute(
+        path: resetPasswordView,
+        builder: (context, state) => const ResetPasswordView(),
       ),
       GoRoute(
         path: unlockView,

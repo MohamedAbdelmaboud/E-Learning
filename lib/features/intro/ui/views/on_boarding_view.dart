@@ -1,9 +1,8 @@
 import 'package:e_learning/common/utils/app_colors.dart';
-import 'package:e_learning/common/widgets/custom_button.dart';
 import 'package:e_learning/features/intro/data/models/page_model.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
+import '../widgets/buttons_column.dart';
 import '../widgets/page_view_body.dart';
 
 class OnBoardingView extends StatefulWidget {
@@ -16,21 +15,7 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   late PageController controller;
   int currentIndex = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    controller = PageController(initialPage: 0);
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
   Container buildDot(int index, BuildContext context) {
-// Another Container returned
     return Container(
       height: 9,
       width: 9,
@@ -45,6 +30,18 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    controller = PageController(initialPage: 0);
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
@@ -52,6 +49,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
+            flex: 5,
             // PageView Builder
             child: PageView.builder(
               controller: controller,
@@ -66,24 +64,21 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   PageViewBody(pageModel: pages[index]),
-                  // const Gap(40),
-                  // Row(
-                  //   mainAxisAlignment: MainAxisAlignment.center,
-                  //   children: List.generate(
-                  //     3,
-                  //     (index) => buildDot(index, context),
-                  //   ),
-                  // ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(
+                      3,
+                      (index) => buildDot(index, context),
+                    ),
+                  ),
                 ],
               ),
             ),
           ),
-
-          Column(
-            children: [
-              CustomButton(text: 'Sign in', onPressed: () {}),
-              CustomButton(text: 'Sign up', onPressed: () {}),
-            ],
+          Expanded(
+            flex: 1,
+            child: ButtonsColumn(
+                currentIndex: currentIndex, controller: controller),
           )
           // Container created for dots
         ],

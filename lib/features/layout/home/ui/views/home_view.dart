@@ -5,8 +5,8 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(child: const Text('Home View')),
+    return const Scaffold(
+      body: Text('Home View'),
     );
   }
 }

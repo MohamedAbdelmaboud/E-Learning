@@ -1,14 +1,15 @@
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-class OnboardingButton extends StatelessWidget {
-  const OnboardingButton({super.key, required this.text});
+class HeadText extends StatelessWidget {
+  const HeadText(this.text, {super.key});
   final String text;
+
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppStyles.regular18,
+      style: AppStyles.bold24,
     );
   }
 }

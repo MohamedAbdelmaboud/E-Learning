@@ -12,13 +12,17 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle regular9 = _regular(
+    color: Colors.white,
+    fontSize: 9,
+  );
   static TextStyle regular12 = _regular(
-    color: const Color(0xFFAAAAAA),
+    color: AppColors.greyColor,
     fontSize: 12,
   );
 
   static TextStyle regular14 = _regular(
-    color: AppColors.secondaryColor,
+    color: AppColors.greyColor,
     fontSize: 14,
   );
 
@@ -71,6 +75,11 @@ abstract class AppStyles {
       fontWeight: FontWeight.w600,
     );
   }
+
+  static TextStyle semiBold14 = _semiBold(
+    color: AppColors.primaryColor,
+    fontSize: 14,
+  );
 
   static TextStyle semiBold16 = _semiBold(
     color: const Color(0xFF064061),

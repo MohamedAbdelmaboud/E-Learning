@@ -1,9 +1,9 @@
-import 'package:e_learning/features/auth/views/reset_password_view.dart';
-import 'package:e_learning/features/auth/views/sign_in_view.dart';
-import 'package:e_learning/features/auth/views/unlock_view.dart';
+import 'package:e_learning/features/auth/ui/views/reset_password_view.dart';
+import 'package:e_learning/features/auth/ui/views/sign_in_view.dart';
+import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
+import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/home/ui/views/home_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
-import 'package:e_learning/features/splash/ui/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,11 +14,24 @@ class AppRouter {
   static String loginView = '/loginView';
   static String unlockView = '/unlockView';
   static String signInView = '/signInView';
+  static String signUpView = '/signUpView';
   static String resetPasswordView = '/resetPasswordView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
+        builder: (context, state) => const SignInView(),
+      ),
+      GoRoute(
+        path: signInView,
+        builder: (context, state) => const SignInView(),
+      ),
+      GoRoute(
+        path: signUpView,
+        builder: (context, state) => const SignUpView(),
+      ),
+      GoRoute(
+        path: resetPasswordView,
         builder: (context, state) => const ResetPasswordView(),
       ),
       GoRoute(

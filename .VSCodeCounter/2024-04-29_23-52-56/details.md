@@ -1,0 +1,137 @@
+# Details
+
+Date : 2024-04-29 23:52:56
+
+Directory g:\\flutter_projects\\e_learning
+
+Total : 122 files,  3571 codes, 320 comments, 538 blanks, all 4429 lines
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [README.md](/README.md) | Markdown | 10 | 0 | 7 | 17 |
+| [analysis_options.yaml](/analysis_options.yaml) | YAML | 3 | 22 | 4 | 29 |
+| [android/app/build.gradle](/android/app/build.gradle) | Gradle | 51 | 5 | 12 | 68 |
+| [android/app/src/debug/AndroidManifest.xml](/android/app/src/debug/AndroidManifest.xml) | XML | 3 | 4 | 1 | 8 |
+| [android/app/src/main/AndroidManifest.xml](/android/app/src/main/AndroidManifest.xml) | XML | 33 | 11 | 1 | 45 |
+| [android/app/src/main/res/drawable-v21/launch_background.xml](/android/app/src/main/res/drawable-v21/launch_background.xml) | XML | 4 | 7 | 2 | 13 |
+| [android/app/src/main/res/drawable/launch_background.xml](/android/app/src/main/res/drawable/launch_background.xml) | XML | 4 | 7 | 2 | 13 |
+| [android/app/src/main/res/values-night/styles.xml](/android/app/src/main/res/values-night/styles.xml) | XML | 9 | 9 | 1 | 19 |
+| [android/app/src/main/res/values/styles.xml](/android/app/src/main/res/values/styles.xml) | XML | 9 | 9 | 1 | 19 |
+| [android/app/src/profile/AndroidManifest.xml](/android/app/src/profile/AndroidManifest.xml) | XML | 3 | 4 | 1 | 8 |
+| [android/build.gradle](/android/build.gradle) | Gradle | 16 | 0 | 3 | 19 |
+| [android/gradle.properties](/android/gradle.properties) | Properties | 3 | 0 | 1 | 4 |
+| [android/gradle/wrapper/gradle-wrapper.properties](/android/gradle/wrapper/gradle-wrapper.properties) | Properties | 5 | 0 | 1 | 6 |
+| [android/settings.gradle](/android/settings.gradle) | Gradle | 22 | 0 | 5 | 27 |
+| [assets/images/Learning-bro.svg](/assets/images/Learning-bro.svg) | XML | 1 | 0 | 0 | 1 |
+| [assets/images/Onlinelearning-amico.svg](/assets/images/Onlinelearning-amico.svg) | XML | 1 | 0 | 0 | 1 |
+| [assets/images/Webinar-rafiki.svg](/assets/images/Webinar-rafiki.svg) | XML | 1 | 0 | 1 | 2 |
+| [assets/images/certificate.svg](/assets/images/certificate.svg) | XML | 3 | 0 | 1 | 4 |
+| [assets/images/check.svg](/assets/images/check.svg) | XML | 19 | 0 | 1 | 20 |
+| [assets/images/edit.svg](/assets/images/edit.svg) | XML | 3 | 0 | 1 | 4 |
+| [assets/images/facebook_logo.svg](/assets/images/facebook_logo.svg) | XML | 4 | 0 | 1 | 5 |
+| [assets/images/google_logo.svg](/assets/images/google_logo.svg) | XML | 7 | 0 | 1 | 8 |
+| [assets/images/help.svg](/assets/images/help.svg) | XML | 3 | 0 | 1 | 4 |
+| [assets/images/like.svg](/assets/images/like.svg) | XML | 31 | 0 | 1 | 32 |
+| [assets/images/logo.svg](/assets/images/logo.svg) | XML | 32 | 0 | 1 | 33 |
+| [assets/images/logout.svg](/assets/images/logout.svg) | XML | 3 | 0 | 1 | 4 |
+| [assets/images/menu.svg](/assets/images/menu.svg) | XML | 17 | 0 | 1 | 18 |
+| [assets/images/payment.svg](/assets/images/payment.svg) | XML | 3 | 0 | 1 | 4 |
+| [assets/images/send.svg](/assets/images/send.svg) | XML | 3 | 0 | 1 | 4 |
+| [assets/images/unlock.svg](/assets/images/unlock.svg) | XML | 1 | 0 | 0 | 1 |
+| [ios/RunnerTests/RunnerTests.swift](/ios/RunnerTests/RunnerTests.swift) | Swift | 7 | 2 | 4 | 13 |
+| [ios/Runner/AppDelegate.swift](/ios/Runner/AppDelegate.swift) | Swift | 12 | 0 | 2 | 14 |
+| [ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json](/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json) | JSON | 122 | 0 | 1 | 123 |
+| [ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json](/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json) | JSON | 23 | 0 | 1 | 24 |
+| [ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md](/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md) | Markdown | 3 | 0 | 2 | 5 |
+| [ios/Runner/Base.lproj/LaunchScreen.storyboard](/ios/Runner/Base.lproj/LaunchScreen.storyboard) | XML | 36 | 1 | 1 | 38 |
+| [ios/Runner/Base.lproj/Main.storyboard](/ios/Runner/Base.lproj/Main.storyboard) | XML | 25 | 1 | 1 | 27 |
+| [ios/Runner/Runner-Bridging-Header.h](/ios/Runner/Runner-Bridging-Header.h) | C++ | 1 | 0 | 1 | 2 |
+| [lib/common/routing/app_routes.dart](/lib/common/routing/app_routes.dart) | Dart | 80 | 1 | 3 | 84 |
+| [lib/common/utils/app_colors.dart](/lib/common/utils/app_colors.dart) | Dart | 10 | 0 | 2 | 12 |
+| [lib/common/utils/app_styles.dart](/lib/common/utils/app_styles.dart) | Dart | 116 | 4 | 22 | 142 |
+| [lib/common/utils/assets.dart](/lib/common/utils/assets.dart) | Dart | 20 | 34 | 19 | 73 |
+| [lib/common/widgets/custom_app_bar.dart](/lib/common/widgets/custom_app_bar.dart) | Dart | 48 | 0 | 6 | 54 |
+| [lib/common/widgets/custom_button.dart](/lib/common/widgets/custom_button.dart) | Dart | 38 | 0 | 3 | 41 |
+| [lib/common/widgets/custom_text_button.dart](/lib/common/widgets/custom_text_button.dart) | Dart | 42 | 0 | 4 | 46 |
+| [lib/common/widgets/custom_text_button_builder.dart](/lib/common/widgets/custom_text_button_builder.dart) | Dart | 152 | 0 | 9 | 161 |
+| [lib/common/widgets/custom_text_form_field.dart](/lib/common/widgets/custom_text_form_field.dart) | Dart | 94 | 0 | 8 | 102 |
+| [lib/features/auth/ui/views/reset_password_view.dart](/lib/features/auth/ui/views/reset_password_view.dart) | Dart | 36 | 0 | 4 | 40 |
+| [lib/features/auth/ui/views/sign_in_view.dart](/lib/features/auth/ui/views/sign_in_view.dart) | Dart | 54 | 0 | 4 | 58 |
+| [lib/features/auth/ui/views/sign_up_view.dart](/lib/features/auth/ui/views/sign_up_view.dart) | Dart | 57 | 0 | 4 | 61 |
+| [lib/features/auth/ui/views/unlock_view.dart](/lib/features/auth/ui/views/unlock_view.dart) | Dart | 29 | 0 | 4 | 33 |
+| [lib/features/auth/ui/widgets/confirm_password_text_form.dart](/lib/features/auth/ui/widgets/confirm_password_text_form.dart) | Dart | 13 | 0 | 3 | 16 |
+| [lib/features/auth/ui/widgets/custom_divider.dart](/lib/features/auth/ui/widgets/custom_divider.dart) | Dart | 39 | 0 | 3 | 42 |
+| [lib/features/auth/ui/widgets/forget_password.dart](/lib/features/auth/ui/widgets/forget_password.dart) | Dart | 19 | 0 | 4 | 23 |
+| [lib/features/auth/ui/widgets/full_name_text_field.dart](/lib/features/auth/ui/widgets/full_name_text_field.dart) | Dart | 12 | 0 | 3 | 15 |
+| [lib/features/auth/ui/widgets/head_text.dart](/lib/features/auth/ui/widgets/head_text.dart) | Dart | 13 | 0 | 3 | 16 |
+| [lib/features/auth/ui/widgets/new_password_text_form.dart](/lib/features/auth/ui/widgets/new_password_text_form.dart) | Dart | 13 | 0 | 3 | 16 |
+| [lib/features/auth/ui/widgets/save_button.dart](/lib/features/auth/ui/widgets/save_button.dart) | Dart | 12 | 0 | 3 | 15 |
+| [lib/features/auth/ui/widgets/sign_buttons.dart](/lib/features/auth/ui/widgets/sign_buttons.dart) | Dart | 33 | 0 | 3 | 36 |
+| [lib/features/auth/ui/widgets/sign_in_email_text_field.dart](/lib/features/auth/ui/widgets/sign_in_email_text_field.dart) | Dart | 14 | 0 | 3 | 17 |
+| [lib/features/auth/ui/widgets/sign_in_here.dart](/lib/features/auth/ui/widgets/sign_in_here.dart) | Dart | 28 | 0 | 5 | 33 |
+| [lib/features/auth/ui/widgets/sign_in_hint_text.dart](/lib/features/auth/ui/widgets/sign_in_hint_text.dart) | Dart | 17 | 0 | 3 | 20 |
+| [lib/features/auth/ui/widgets/sign_in_password_text_field.dart](/lib/features/auth/ui/widgets/sign_in_password_text_field.dart) | Dart | 15 | 0 | 3 | 18 |
+| [lib/features/auth/ui/widgets/sign_in_text.dart](/lib/features/auth/ui/widgets/sign_in_text.dart) | Dart | 13 | 0 | 3 | 16 |
+| [lib/features/auth/ui/widgets/sign_in_text_button.dart](/lib/features/auth/ui/widgets/sign_in_text_button.dart) | Dart | 12 | 0 | 3 | 15 |
+| [lib/features/auth/ui/widgets/sign_in_with_facebook.dart](/lib/features/auth/ui/widgets/sign_in_with_facebook.dart) | Dart | 14 | 0 | 3 | 17 |
+| [lib/features/auth/ui/widgets/sign_in_with_google.dart](/lib/features/auth/ui/widgets/sign_in_with_google.dart) | Dart | 14 | 0 | 3 | 17 |
+| [lib/features/auth/ui/widgets/sign_up_button.dart](/lib/features/auth/ui/widgets/sign_up_button.dart) | Dart | 12 | 0 | 3 | 15 |
+| [lib/features/auth/ui/widgets/sign_up_confirm_password_text_field.dart](/lib/features/auth/ui/widgets/sign_up_confirm_password_text_field.dart) | Dart | 13 | 0 | 3 | 16 |
+| [lib/features/auth/ui/widgets/sign_up_email_text_field.dart](/lib/features/auth/ui/widgets/sign_up_email_text_field.dart) | Dart | 12 | 0 | 3 | 15 |
+| [lib/features/auth/ui/widgets/sign_up_here.dart](/lib/features/auth/ui/widgets/sign_up_here.dart) | Dart | 28 | 0 | 5 | 33 |
+| [lib/features/auth/ui/widgets/sign_up_password_text_field.dart](/lib/features/auth/ui/widgets/sign_up_password_text_field.dart) | Dart | 13 | 0 | 3 | 16 |
+| [lib/features/auth/ui/widgets/sign_up_with_facebook.dart](/lib/features/auth/ui/widgets/sign_up_with_facebook.dart) | Dart | 14 | 0 | 3 | 17 |
+| [lib/features/auth/ui/widgets/sign_up_with_google.dart](/lib/features/auth/ui/widgets/sign_up_with_google.dart) | Dart | 14 | 0 | 3 | 17 |
+| [lib/features/intro/data/models/page_model.dart](/lib/features/intro/data/models/page_model.dart) | Dart | 26 | 0 | 4 | 30 |
+| [lib/features/intro/ui/views/on_boarding_view.dart](/lib/features/intro/ui/views/on_boarding_view.dart) | Dart | 79 | 2 | 8 | 89 |
+| [lib/features/intro/ui/widgets/body_widget.dart](/lib/features/intro/ui/widgets/body_widget.dart) | Dart | 30 | 0 | 3 | 33 |
+| [lib/features/intro/ui/widgets/buttons_column.dart](/lib/features/intro/ui/widgets/buttons_column.dart) | Dart | 48 | 0 | 4 | 52 |
+| [lib/features/intro/ui/widgets/page_view_body.dart](/lib/features/intro/ui/widgets/page_view_body.dart) | Dart | 27 | 0 | 3 | 30 |
+| [lib/features/intro/ui/widgets/title_widget.dart](/lib/features/intro/ui/widgets/title_widget.dart) | Dart | 16 | 0 | 2 | 18 |
+| [lib/features/layout/home/data/models/notifications_model.dart](/lib/features/layout/home/data/models/notifications_model.dart) | Dart | 44 | 0 | 3 | 47 |
+| [lib/features/layout/home/ui/views/home_view.dart](/lib/features/layout/home/ui/views/home_view.dart) | Dart | 10 | 0 | 3 | 13 |
+| [lib/features/layout/home/ui/views/notifications_view.dart](/lib/features/layout/home/ui/views/notifications_view.dart) | Dart | 22 | 0 | 4 | 26 |
+| [lib/features/layout/home/ui/widgets/notifications_item.dart](/lib/features/layout/home/ui/widgets/notifications_item.dart) | Dart | 62 | 0 | 2 | 64 |
+| [lib/features/layout/inbox/ui/views/inbox_view.dart](/lib/features/layout/inbox/ui/views/inbox_view.dart) | Dart | 48 | 0 | 4 | 52 |
+| [lib/features/layout/inbox/ui/widgets/chat_column.dart](/lib/features/layout/inbox/ui/widgets/chat_column.dart) | Dart | 29 | 0 | 2 | 31 |
+| [lib/features/layout/inbox/ui/widgets/custom_row.dart](/lib/features/layout/inbox/ui/widgets/custom_row.dart) | Dart | 24 | 0 | 2 | 26 |
+| [lib/features/layout/inbox/ui/widgets/inbox_item.dart](/lib/features/layout/inbox/ui/widgets/inbox_item.dart) | Dart | 37 | 0 | 4 | 41 |
+| [lib/features/layout/inbox/ui/widgets/inbox_item_list_view.dart](/lib/features/layout/inbox/ui/widgets/inbox_item_list_view.dart) | Dart | 22 | 0 | 2 | 24 |
+| [lib/features/layout/inbox/ui/widgets/mort_container.dart](/lib/features/layout/inbox/ui/widgets/mort_container.dart) | Dart | 22 | 0 | 3 | 25 |
+| [lib/features/layout/inbox/ui/widgets/small_container.dart](/lib/features/layout/inbox/ui/widgets/small_container.dart) | Dart | 24 | 0 | 3 | 27 |
+| [lib/features/layout/profile/data/models/profile_item_model.dart](/lib/features/layout/profile/data/models/profile_item_model.dart) | Dart | 15 | 0 | 4 | 19 |
+| [lib/features/layout/profile/ui/views/profile_view.dart](/lib/features/layout/profile/ui/views/profile_view.dart) | Dart | 47 | 0 | 4 | 51 |
+| [lib/features/layout/profile/ui/widgets/profile_info.dart](/lib/features/layout/profile/ui/widgets/profile_info.dart) | Dart | 33 | 0 | 3 | 36 |
+| [lib/features/layout/profile/ui/widgets/profile_item.dart](/lib/features/layout/profile/ui/widgets/profile_item.dart) | Dart | 36 | 0 | 2 | 38 |
+| [lib/features/splash/ui/views/splash_view.dart](/lib/features/splash/ui/views/splash_view.dart) | Dart | 48 | 0 | 7 | 55 |
+| [lib/main.dart](/lib/main.dart) | Dart | 22 | 1 | 4 | 27 |
+| [linux/flutter/generated_plugin_registrant.cc](/linux/flutter/generated_plugin_registrant.cc) | C++ | 3 | 4 | 5 | 12 |
+| [linux/flutter/generated_plugin_registrant.h](/linux/flutter/generated_plugin_registrant.h) | C++ | 5 | 5 | 6 | 16 |
+| [linux/main.cc](/linux/main.cc) | C++ | 5 | 0 | 2 | 7 |
+| [linux/my_application.cc](/linux/my_application.cc) | C++ | 82 | 17 | 26 | 125 |
+| [linux/my_application.h](/linux/my_application.h) | C++ | 7 | 7 | 5 | 19 |
+| [macos/Flutter/GeneratedPluginRegistrant.swift](/macos/Flutter/GeneratedPluginRegistrant.swift) | Swift | 6 | 3 | 4 | 13 |
+| [macos/RunnerTests/RunnerTests.swift](/macos/RunnerTests/RunnerTests.swift) | Swift | 7 | 2 | 4 | 13 |
+| [macos/Runner/AppDelegate.swift](/macos/Runner/AppDelegate.swift) | Swift | 8 | 0 | 2 | 10 |
+| [macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json](/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json) | JSON | 68 | 0 | 1 | 69 |
+| [macos/Runner/Base.lproj/MainMenu.xib](/macos/Runner/Base.lproj/MainMenu.xib) | XML | 343 | 0 | 1 | 344 |
+| [macos/Runner/MainFlutterWindow.swift](/macos/Runner/MainFlutterWindow.swift) | Swift | 12 | 0 | 4 | 16 |
+| [pubspec.yaml](/pubspec.yaml) | YAML | 32 | 38 | 7 | 77 |
+| [test/widget_test.dart](/test/widget_test.dart) | Dart | 14 | 10 | 7 | 31 |
+| [web/index.html](/web/index.html) | HTML | 38 | 16 | 6 | 60 |
+| [web/manifest.json](/web/manifest.json) | JSON | 35 | 0 | 1 | 36 |
+| [windows/flutter/generated_plugin_registrant.cc](/windows/flutter/generated_plugin_registrant.cc) | C++ | 3 | 4 | 5 | 12 |
+| [windows/flutter/generated_plugin_registrant.h](/windows/flutter/generated_plugin_registrant.h) | C++ | 5 | 5 | 6 | 16 |
+| [windows/runner/flutter_window.cpp](/windows/runner/flutter_window.cpp) | C++ | 49 | 7 | 16 | 72 |
+| [windows/runner/flutter_window.h](/windows/runner/flutter_window.h) | C++ | 20 | 5 | 9 | 34 |
+| [windows/runner/main.cpp](/windows/runner/main.cpp) | C++ | 30 | 4 | 10 | 44 |
+| [windows/runner/resource.h](/windows/runner/resource.h) | C++ | 9 | 6 | 2 | 17 |
+| [windows/runner/utils.cpp](/windows/runner/utils.cpp) | C++ | 54 | 2 | 10 | 66 |
+| [windows/runner/utils.h](/windows/runner/utils.h) | C++ | 8 | 6 | 6 | 20 |
+| [windows/runner/win32_window.cpp](/windows/runner/win32_window.cpp) | C++ | 210 | 24 | 55 | 289 |
+| [windows/runner/win32_window.h](/windows/runner/win32_window.h) | C++ | 48 | 31 | 24 | 103 |
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

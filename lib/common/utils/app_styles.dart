@@ -55,7 +55,10 @@ abstract class AppStyles {
     color: AppColors.primaryColor,
     fontSize: 13,
   );
-
+static TextStyle medium14= _medium(
+    color: AppColors.secondaryColor,
+    fontSize: 14,
+  );
   static TextStyle medium16 = _medium(
     color: const Color(0xFF064061),
     fontSize: 16,
@@ -82,7 +85,7 @@ abstract class AppStyles {
   );
 
   static TextStyle semiBold16 = _semiBold(
-    color: const Color(0xFF064061),
+    color: AppColors.primaryColor,
     fontSize: 16,
   );
 

@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../common/widgets/underline_text.dart';
+
 class ButtonsColumn extends StatelessWidget {
   const ButtonsColumn({
     super.key,
@@ -34,16 +36,11 @@ class ButtonsColumn extends StatelessWidget {
           },
         ),
         const Gap(20),
-        TextButton(
+        UnderlineText(
+          text: 'SKIP',
           onPressed: () {
             context.go(AppRouter.unlockView);
           },
-          child: Text(
-            'SKIP',
-            style: AppStyles.regular14.copyWith(
-                decoration: TextDecoration.underline,
-                color: AppColors.greyColor),
-          ),
         )
       ],
     );

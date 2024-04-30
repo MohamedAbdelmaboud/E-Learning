@@ -1,9 +1,29 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesBook
+  /// assets/images/book.svg
+  static const String assetsImagesBook = "assets/images/book.svg";
+
+  /// Assets for assetsImagesBookColor
+  /// assets/images/book_color.svg
+  static const String assetsImagesBookColor = "assets/images/book_color.svg";
+
+  /// Assets for assetsImagesCertificateColor
+  /// assets/images/certificate_color.svg
+  static const String assetsImagesCertificateColor = "assets/images/certificate_color.svg";
+
+  /// Assets for assetsImagesCertification
+  /// assets/images/certification.svg
+  static const String assetsImagesCertification = "assets/images/certification.svg";
+
   /// Assets for assetsImagesCheck
   /// assets/images/check.svg
   static const String assetsImagesCheck = "assets/images/check.svg";
+
+  /// Assets for assetsImagesEdit
+  /// assets/images/edit.svg
+  static const String assetsImagesEdit = "assets/images/edit.svg";
 
   /// Assets for assetsImagesFacebookLogo
   /// assets/images/facebook_logo.svg
@@ -13,13 +33,33 @@ class Assets {
   /// assets/images/google_logo.svg
   static const String assetsImagesGoogleLogo = "assets/images/google_logo.svg";
 
+  /// Assets for assetsImagesHelp
+  /// assets/images/help.svg
+  static const String assetsImagesHelp = "assets/images/help.svg";
+
+  /// Assets for assetsImagesImage
+  /// assets/images/image.png
+  static const String assetsImagesImage = "assets/images/image.png";
+
+  /// Assets for assetsImagesImageSvg
+  /// assets/images/imageSvg.svg
+  static const String assetsImagesImageSvg = "assets/images/imageSvg.svg";
+
   /// Assets for assetsImagesLearningBro
   /// assets/images/Learning-bro.svg
   static const String assetsImagesLearningBro = "assets/images/Learning-bro.svg";
 
+  /// Assets for assetsImagesLike
+  /// assets/images/like.svg
+  static const String assetsImagesLike = "assets/images/like.svg";
+
   /// Assets for assetsImagesLogo
   /// assets/images/logo.svg
   static const String assetsImagesLogo = "assets/images/logo.svg";
+
+  /// Assets for assetsImagesLogout
+  /// assets/images/logout.svg
+  static const String assetsImagesLogout = "assets/images/logout.svg";
 
   /// Assets for assetsImagesMenu
   /// assets/images/menu.svg
@@ -29,9 +69,33 @@ class Assets {
   /// assets/images/mort.jpg
   static const String assetsImagesMort = "assets/images/mort.jpg";
 
+  /// Assets for assetsImagesMyCertificates
+  /// assets/images/myCertificates.svg
+  static const String assetsImagesMyCertificates = "assets/images/myCertificates.svg";
+
   /// Assets for assetsImagesOnlinelearningAmico
   /// assets/images/Onlinelearning-amico.svg
   static const String assetsImagesOnlinelearningAmico = "assets/images/Onlinelearning-amico.svg";
+
+  /// Assets for assetsImagesPayment
+  /// assets/images/payment.svg
+  static const String assetsImagesPayment = "assets/images/payment.svg";
+
+  /// Assets for assetsImagesPlayButton
+  /// assets/images/playButton.svg
+  static const String assetsImagesPlayButton = "assets/images/playButton.svg";
+
+  /// Assets for assetsImagesSend
+  /// assets/images/send.svg
+  static const String assetsImagesSend = "assets/images/send.svg";
+
+  /// Assets for assetsImagesTime
+  /// assets/images/time.svg
+  static const String assetsImagesTime = "assets/images/time.svg";
+
+  /// Assets for assetsImagesTimeColor
+  /// assets/images/time_color.svg
+  static const String assetsImagesTimeColor = "assets/images/time_color.svg";
 
   /// Assets for assetsImagesUnlock
   /// assets/images/unlock.svg

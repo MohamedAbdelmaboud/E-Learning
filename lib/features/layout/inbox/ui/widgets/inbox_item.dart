@@ -1,8 +1,10 @@
 import 'package:e_learning/common/utils/app_styles.dart';
-import 'package:e_learning/common/utils/assets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
+import 'chat_column.dart';
+import 'mort_container.dart';
 import 'small_container.dart';
 
 class InboxItem extends StatelessWidget {
@@ -13,29 +15,13 @@ class InboxItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-      Row(
+      const Row(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(99),
-            child: Image.asset(
-              Assets.assetsImagesMort,
-              height: 70,
-            ),
-          ),
-          const Gap(20),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Abdelmaboud',
-                style: AppStyles.bold14,
-              ),
-              const Gap(5),
-              Text(
-                'Hello! Good Morning.',
-                style: AppStyles.regular12,
-              )
-            ],
+          MortContainer(),
+          Gap(20),
+          CustomColumn(
+            title: 'Abdelmaboud',
+            subTitle: 'Hello! Good Morning.',
           ),
         ],
       ),

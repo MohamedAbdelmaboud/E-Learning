@@ -55,7 +55,7 @@ class CustomTextButtonBuilder {
 
   static reversedWithText({
     required String text,
-    required Function() onTap,
+    Function()? onTap,
     double? width,
     double? hight,
     double? borderRadius,

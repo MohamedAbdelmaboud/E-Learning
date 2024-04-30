@@ -18,6 +18,7 @@ class InboxView extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(20.0),
         child: SingleChildScrollView(
+          clipBehavior: Clip.none,
           child: Column(
             children: [
               CustomRow(

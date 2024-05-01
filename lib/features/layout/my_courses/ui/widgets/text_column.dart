@@ -17,6 +17,7 @@ class TextColumn extends StatelessWidget {
           'Visual Communication College',
           style: AppStyles.medium14,
         ),
+        const Gap(5),
         Row(
           children: [
             const Icon(

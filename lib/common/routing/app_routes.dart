@@ -3,13 +3,16 @@ import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
 import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
+import 'package:e_learning/intialview.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/ui/views/sign_in_view.dart';
-import '../../features/layout/my_courses/ui/views/course_view.dart';
 import '../../features/layout/home/ui/views/home_view.dart';
 import '../../features/layout/home/ui/views/notifications_view.dart';
+import '../../features/layout/my_courses/ui/views/course_view.dart';
 import '../../features/layout/profile/ui/views/profile_view.dart';
 
 class AppRouter {
@@ -24,11 +27,21 @@ class AppRouter {
   static String notificationsView = '/notificationsView';
   static String profileView = '/profileView';
   static String courseView = '/courseView';
+  static String paymentView = '/paymentView';
+  static String paymentMethodView = '/paymentMethodView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
-        builder: (context, state) => const CourseView(),
+        builder: (context, state) => const InitialView(),
+      ),
+      GoRoute(
+        path: paymentMethodView,
+        builder: (context, state) => const PaymentMethodView(),
+      ),
+      GoRoute(
+        path: paymentView,
+        builder: (context, state) => const PaymentView(),
       ),
       GoRoute(
         path: courseView,
@@ -86,4 +99,19 @@ class AppRouter {
       ),
     ],
   );
+  static List<String> pages = [
+    splashView,
+    homeView,
+    onBoardingView,
+    unlockView,
+    signInView,
+    signUpView,
+    resetPasswordView,
+    inboxView,
+    notificationsView,
+    profileView,
+    courseView,
+    paymentView,
+    paymentMethodView,
+  ];
 }

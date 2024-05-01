@@ -12,9 +12,14 @@ class CousreItemsBuilder extends StatelessWidget {
     return Column(
       children: List.generate(
         courseItemsModels.length,
-        (index) => CustomItemBuilder.courseItem(
-          model: courseItemsModels[index],
-        ),
+        (index) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 13.0),
+            child: CustomItemBuilder.courseItem(
+              model: courseItemsModels[index],
+            ),
+          );
+        },
       ),
     );
   }

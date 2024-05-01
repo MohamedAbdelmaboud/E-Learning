@@ -2,8 +2,8 @@ import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:e_learning/common/utils/assets.dart';
 import 'package:flutter/material.dart';
 
-class CourseContent extends StatelessWidget {
-  const CourseContent({
+class CourseVideo extends StatelessWidget {
+  const CourseVideo({
     super.key,
   });
 

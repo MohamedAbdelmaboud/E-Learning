@@ -21,6 +21,14 @@ class Assets {
   /// assets/images/check.svg
   static const String assetsImagesCheck = "assets/images/check.svg";
 
+  /// Assets for assetsImagesDollar
+  /// assets/images/dollar.svg
+  static const String assetsImagesDollar = "assets/images/dollar.svg";
+
+  /// Assets for assetsImagesEasypaisa
+  /// assets/images/easypaisa.svg
+  static const String assetsImagesEasypaisa = "assets/images/easypaisa.svg";
+
   /// Assets for assetsImagesEdit
   /// assets/images/edit.svg
   static const String assetsImagesEdit = "assets/images/edit.svg";
@@ -45,6 +53,10 @@ class Assets {
   /// assets/images/imageSvg.svg
   static const String assetsImagesImageSvg = "assets/images/imageSvg.svg";
 
+  /// Assets for assetsImagesJazzCash
+  /// assets/images/jazz_cash.svg
+  static const String assetsImagesJazzCash = "assets/images/jazz_cash.svg";
+
   /// Assets for assetsImagesLearningBro
   /// assets/images/Learning-bro.svg
   static const String assetsImagesLearningBro = "assets/images/Learning-bro.svg";
@@ -61,6 +73,14 @@ class Assets {
   /// assets/images/logout.svg
   static const String assetsImagesLogout = "assets/images/logout.svg";
 
+  /// Assets for assetsImagesMaestro
+  /// assets/images/Maestro.svg
+  static const String assetsImagesMaestro = "assets/images/Maestro.svg";
+
+  /// Assets for assetsImagesMastercard
+  /// assets/images/Mastercard.svg
+  static const String assetsImagesMastercard = "assets/images/Mastercard.svg";
+
   /// Assets for assetsImagesMenu
   /// assets/images/menu.svg
   static const String assetsImagesMenu = "assets/images/menu.svg";
@@ -76,6 +96,10 @@ class Assets {
   /// Assets for assetsImagesOnlinelearningAmico
   /// assets/images/Onlinelearning-amico.svg
   static const String assetsImagesOnlinelearningAmico = "assets/images/Onlinelearning-amico.svg";
+
+  /// Assets for assetsImagesPayPal
+  /// assets/images/PayPal.svg
+  static const String assetsImagesPayPal = "assets/images/PayPal.svg";
 
   /// Assets for assetsImagesPayment
   /// assets/images/payment.svg
@@ -100,6 +124,10 @@ class Assets {
   /// Assets for assetsImagesUnlock
   /// assets/images/unlock.svg
   static const String assetsImagesUnlock = "assets/images/unlock.svg";
+
+  /// Assets for assetsImagesVisa
+  /// assets/images/Visa.svg
+  static const String assetsImagesVisa = "assets/images/Visa.svg";
 
   /// Assets for assetsImagesWebinarRafiki
   /// assets/images/Webinar-rafiki.svg

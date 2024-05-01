@@ -29,7 +29,10 @@ class SeeMoreText extends StatelessWidget {
               onTap: onTap,
               child: Text(
                 readMore ? " Read less" : " Read more",
-                style: const TextStyle(color: Colors.blue, fontSize: 12),
+                style: const TextStyle(
+                    color: Colors.blue,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),

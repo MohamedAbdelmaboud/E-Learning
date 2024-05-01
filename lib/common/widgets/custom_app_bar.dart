@@ -22,13 +22,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leadingWidth: 30,
-      leading: Visibility(
-        visible: withBackButton,
-        child: BackButton(
-          color: AppColors.primaryColor,
-          onPressed: () => context.pop(),
-        ),
-      ),
+      automaticallyImplyLeading: false,
+      leading: withBackButton
+          ? BackButton(
+              color: AppColors.primaryColor,
+              onPressed: () => context.pop(),
+            )
+          : null,
       title: Text(
         title ?? '',
         style: AppStyles.bold21,
@@ -41,6 +41,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: Icon(
               actionIcon,
               size: 24,
+              color: AppColors.primaryColor,
             ),
           ),
         ),

@@ -48,3 +48,18 @@ List<ItemModel> courseItemsModels = [
     trailingText: 'Online Certificate',
   ),
 ];
+// for Overview
+List<ItemModel> overviewItemsModels = [
+  ItemModel(
+    iconPath: Assets.assetsImagesBook,
+    title: '50+ Lectures',
+  ),
+  ItemModel(
+    iconPath: Assets.assetsImagesTime,
+    title: '4 Weeks',
+  ),
+  ItemModel(
+    iconPath: Assets.assetsImagesCertification,
+    title: 'Online Certificate',
+  ),
+];

@@ -1,15 +1,15 @@
 import 'package:e_learning/common/utils/app_styles.dart';
-import 'package:e_learning/common/widgets/custom_text_button_builder.dart';
 import 'package:e_learning/common/widgets/underline_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../../common/widgets/custom_text_button_builder.dart';
+import '../../../../../common/widgets/skills_content.dart';
 import '../widgets/cousre_items_builder.dart';
 import '../widgets/see_more_text.dart';
 import '../widgets/text_column.dart';
 import 'course_head_text.dart';
-import 'skill_item.dart';
 
 class CourseDetails extends StatefulWidget {
   const CourseDetails({
@@ -26,25 +26,29 @@ class _CourseDetailsState extends State<CourseDetails> {
       "Visual Communication College's Typography and Layout Design course explores the art and science of typography and layout composition. Learn how to effectively use typefaces, hierarchy, alignment, and grid systems to create visually compelling designs. Gain hands-on experience in editorial design, branding, and digital layouts";
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
+    return Padding(
+      padding: const EdgeInsets.all(21.0),
       child: Column(
-        children: [
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
           Text(
             'Typography and Layout Design',
             style: AppStyles.bold21,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const TextColumn(),
-              Text(
-                r'35$',
-                style: AppStyles.bold21,
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const TextColumn(),
+                Text(
+                  r'35$',
+                  style: AppStyles.bold21,
+                ),
+              ],
+            ),
           ),
-          const Gap(20),
+          const Gap(10),
           const CourseHeadText(text: 'Course Details'),
           const Gap(10),
           SeeMoreText(
@@ -56,48 +60,22 @@ class _CourseDetailsState extends State<CourseDetails> {
               });
             },
           ),
-          const Gap(28),
-          const CousreItemsBuilder(),
-          const Gap(24),
-          const CourseHeadText(text: 'Skills'),
-          const Gap(10),
-          // const IntrinsicHeight(
-          //   child: Wrap(
-          //     clipBehavior: Clip.none,
-          //     direction: Axis.horizontal,
-          //     spacing: 10,
-          //     runSpacing: 13,
-          //     children: [
-          //       SkillItem(text: 'Typography'),
-          //       SkillItem(text: 'Layout composition'),
-          //       SkillItem(text: 'Branding'),
-          //       SkillItem(text: 'Visual communication'),
-          //       SkillItem(text: 'Editorial design')
-          //     ],
-          //   ),
-          // ),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 24.0),
+            child: CousreItemsBuilder(),
+          ),
+          const SkillsContent(),
           const Gap(35),
-          CustomTextButtonBuilder.normalWithText(
-            text: 'ENROLL NOW',
-            onTap: () {},
+          Padding(
+            child: CustomTextButtonBuilder.normalWithText(
+              text: 'ENROLL NOW',
+              onTap: () {},
+            ),
+            padding: const EdgeInsets.symmetric(horizontal: 14),
           ),
           const Gap(20),
-          const UnderlineText(text: 'Start your 7-day free Trial'),          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-          const UnderlineText(text: 'Start your 7-day free Trial'),
-      
+          const Center(
+              child: UnderlineText(text: 'Start your 7-day free Trial'))
         ],
       ),
     );

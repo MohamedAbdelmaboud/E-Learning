@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/course_content.dart';
+import '../widgets/course_video.dart';
 import '../widgets/course_details.dart';
 
 class CourseView extends StatelessWidget {
@@ -22,11 +22,13 @@ class CourseViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Column(
-        children: [
-          CourseContent(),
-          CourseDetails(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            CourseVideo(),
+            CourseDetails(),
+          ],
+        ),
       ),
     );
   }

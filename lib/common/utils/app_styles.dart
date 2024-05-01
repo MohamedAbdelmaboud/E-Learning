@@ -127,6 +127,10 @@ abstract class AppStyles {
     color: AppColors.greyColor,
     fontSize: 16,
   );
+  static TextStyle bold18 = bold(
+    color: AppColors.primaryColor,
+    fontSize: 18,
+  );
 
   static TextStyle bold20 = bold(
     color: AppColors.secondaryColor,

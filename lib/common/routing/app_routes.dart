@@ -3,10 +3,10 @@ import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
 import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/course_content_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/transaction_view.dart';
-import 'package:e_learning/intialview.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -37,7 +37,7 @@ class AppRouter {
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
-        builder: (context, state) => const InitialView(),
+        builder: (context, state) => const CourseContentView(),
       ),
       GoRoute(
           path: transactionView,

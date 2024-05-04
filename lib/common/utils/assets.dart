@@ -29,6 +29,10 @@ class Assets {
   /// assets/images/done.svg
   static const String assetsImagesDone = "assets/images/done.svg";
 
+  /// Assets for assetsImagesDoneIcon
+  /// assets/images/done_icon.svg
+  static const String assetsImagesDoneIcon = "assets/images/done_icon.svg";
+
   /// Assets for assetsImagesDonePicture
   /// assets/images/donePicture.svg
   static const String assetsImagesDonePicture = "assets/images/donePicture.svg";
@@ -128,6 +132,10 @@ class Assets {
   /// Assets for assetsImagesTimeColor
   /// assets/images/time_color.svg
   static const String assetsImagesTimeColor = "assets/images/time_color.svg";
+
+  /// Assets for assetsImagesUnDoneIcon
+  /// assets/images/un_done_icon.svg
+  static const String assetsImagesUnDoneIcon = "assets/images/un_done_icon.svg";
 
   /// Assets for assetsImagesUnlock
   /// assets/images/unlock.svg

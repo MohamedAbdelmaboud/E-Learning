@@ -5,6 +5,7 @@ import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/transaction_view.dart';
 import 'package:e_learning/intialview.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -13,6 +14,7 @@ import '../../features/auth/ui/views/sign_in_view.dart';
 import '../../features/layout/home/ui/views/home_view.dart';
 import '../../features/layout/home/ui/views/notifications_view.dart';
 import '../../features/layout/my_courses/ui/views/course_view.dart';
+import '../../features/layout/my_courses/ui/views/payment_details.dart';
 import '../../features/layout/profile/ui/views/profile_view.dart';
 
 class AppRouter {
@@ -29,11 +31,20 @@ class AppRouter {
   static String courseView = '/courseView';
   static String paymentView = '/paymentView';
   static String paymentMethodView = '/paymentMethodView';
+  static String paymentDetailsView = '/paymentDetailsView';
+  static String transactionView = '/transactionView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
         builder: (context, state) => const InitialView(),
+      ),
+      GoRoute(
+          path: transactionView,
+          builder: (context, state) => const TransactionView()),
+      GoRoute(
+        path: paymentDetailsView,
+        builder: (context, state) => const PaymentDetailsView(),
       ),
       GoRoute(
         path: paymentMethodView,
@@ -113,5 +124,7 @@ class AppRouter {
     courseView,
     paymentView,
     paymentMethodView,
+    paymentDetailsView,
+    transactionView
   ];
 }

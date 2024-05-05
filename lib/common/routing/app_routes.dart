@@ -2,11 +2,13 @@ import 'package:e_learning/features/auth/ui/views/reset_password_view.dart';
 import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
 import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
+import 'package:e_learning/features/layout/home/cubit/categories_cubit.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
 import 'package:e_learning/intialview.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/ui/views/sign_in_view.dart';
@@ -84,7 +86,14 @@ class AppRouter {
         pageBuilder: (context, state) {
           return CustomTransitionPage(
             key: state.pageKey,
-            child: const HomeView(),
+            child: MultiBlocProvider(
+              providers: [
+                BlocProvider(
+                  create: (context) => CategoriesCubit()..fetchData(),
+                ),
+              ],
+              child: const HomeView(),
+            ),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               // Change the opacity of the screen using a Curve based on the the animation's value

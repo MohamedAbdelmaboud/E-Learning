@@ -9,7 +9,7 @@ class HeadText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppStyles.bold24,
+      style: AppStyles.bold18,
     );
   }
 }

@@ -79,6 +79,11 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle semiBold12 = _semiBold(
+    color: AppColors.primaryColor,
+    fontSize: 12,
+  );
+
   static TextStyle semiBold14 = _semiBold(
     color: AppColors.primaryColor,
     fontSize: 14,
@@ -127,6 +132,10 @@ abstract class AppStyles {
     color: AppColors.greyColor,
     fontSize: 16,
   );
+  static TextStyle bold18 = bold(
+    color: AppColors.primaryColor,
+    fontSize: 18,
+  );
 
   static TextStyle bold20 = bold(
     color: AppColors.secondaryColor,
@@ -141,5 +150,4 @@ abstract class AppStyles {
     color: AppColors.secondaryColor,
     fontSize: 24,
   );
- 
 }

@@ -21,6 +21,46 @@ class Assets {
   /// assets/images/check.svg
   static const String assetsImagesCheck = "assets/images/check.svg";
 
+  /// Assets for assetsImagesCourse1
+  /// assets/images/course1.png
+  static const String assetsImagesCourse1 = "assets/images/course1.png";
+
+  /// Assets for assetsImagesCourse10
+  /// assets/images/course10.png
+  static const String assetsImagesCourse10 = "assets/images/course10.png";
+
+  /// Assets for assetsImagesCourse2
+  /// assets/images/course2.png
+  static const String assetsImagesCourse2 = "assets/images/course2.png";
+
+  /// Assets for assetsImagesCourse3
+  /// assets/images/course3.png
+  static const String assetsImagesCourse3 = "assets/images/course3.png";
+
+  /// Assets for assetsImagesCourse4
+  /// assets/images/course4.png
+  static const String assetsImagesCourse4 = "assets/images/course4.png";
+
+  /// Assets for assetsImagesCourse5
+  /// assets/images/course5.png
+  static const String assetsImagesCourse5 = "assets/images/course5.png";
+
+  /// Assets for assetsImagesCourse6
+  /// assets/images/course6.png
+  static const String assetsImagesCourse6 = "assets/images/course6.png";
+
+  /// Assets for assetsImagesCourse7
+  /// assets/images/course7.png
+  static const String assetsImagesCourse7 = "assets/images/course7.png";
+
+  /// Assets for assetsImagesCourse8
+  /// assets/images/course8.png
+  static const String assetsImagesCourse8 = "assets/images/course8.png";
+
+  /// Assets for assetsImagesCourse9
+  /// assets/images/course9.png
+  static const String assetsImagesCourse9 = "assets/images/course9.png";
+
   /// Assets for assetsImagesDollar
   /// assets/images/dollar.svg
   static const String assetsImagesDollar = "assets/images/dollar.svg";
@@ -88,6 +128,10 @@ class Assets {
   /// Assets for assetsImagesMaestro
   /// assets/images/Maestro.svg
   static const String assetsImagesMaestro = "assets/images/Maestro.svg";
+
+  /// Assets for assetsImagesMask
+  /// assets/images/mask.png
+  static const String assetsImagesMask = "assets/images/mask.png";
 
   /// Assets for assetsImagesMastercard
   /// assets/images/Mastercard.svg

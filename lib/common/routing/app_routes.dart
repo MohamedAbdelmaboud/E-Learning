@@ -2,12 +2,16 @@ import 'package:e_learning/features/auth/ui/views/reset_password_view.dart';
 import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
 import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
+import 'package:e_learning/features/layout/home/cubit/categories_cubit.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
+import 'package:e_learning/features/layout/my_courses/cubits/my_courses_cubit.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/course_content_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/my_courses_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/transaction_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/ui/views/sign_in_view.dart';
@@ -31,6 +35,7 @@ class AppRouter {
   static String courseView = '/courseView';
   static String paymentView = '/paymentView';
   static String paymentMethodView = '/paymentMethodView';
+  static String myCourses = '/myCourses';
   static String paymentDetailsView = '/paymentDetailsView';
   static String transactionView = '/transactionView';
   static final GoRouter router = GoRouter(
@@ -95,7 +100,14 @@ class AppRouter {
         pageBuilder: (context, state) {
           return CustomTransitionPage(
             key: state.pageKey,
-            child: const HomeView(),
+            child: MultiBlocProvider(
+              providers: [
+                BlocProvider(
+                  create: (context) => CategoriesCubit()..fetchData(),
+                ),
+              ],
+              child: const HomeView(),
+            ),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               // Change the opacity of the screen using a Curve based on the the animation's value
@@ -107,6 +119,13 @@ class AppRouter {
             },
           );
         },
+      ),
+      GoRoute(
+        path: myCourses,
+        builder: (context, state) => BlocProvider(
+          create: (context) => MyCoursesCubit()..fetchSavedCourses(),
+          child: const MyCoursesView(),
+        ),
       ),
     ],
   );
@@ -124,6 +143,7 @@ class AppRouter {
     courseView,
     paymentView,
     paymentMethodView,
+    myCourses,
     paymentDetailsView,
     transactionView
   ];

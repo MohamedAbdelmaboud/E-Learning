@@ -1,4 +1,3 @@
-import 'package:e_learning/features/layout/my_courses/ui/views/payment_details.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_text_field.dart';

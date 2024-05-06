@@ -136,7 +136,7 @@ class CustomTextButtonBuilder {
     );
   }
 
-  static normalTabBar({
+  static Widget normalTabBar({
     required String text,
     required Function() onTap,
   }) {
@@ -147,7 +147,7 @@ class CustomTextButtonBuilder {
     );
   }
 
-  static selectedTabBar({
+  static Widget selectedTabBar({
     required String text,
     required Function() onTap,
   }) {

@@ -4,6 +4,8 @@ import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/home/cubit/categories_cubit.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
+import 'package:e_learning/features/layout/my_courses/cubits/my_courses_cubit.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/my_courses_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
 import 'package:e_learning/intialview.dart';
@@ -31,6 +33,7 @@ class AppRouter {
   static String courseView = '/courseView';
   static String paymentView = '/paymentView';
   static String paymentMethodView = '/paymentMethodView';
+  static String myCourses = '/myCourses';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
@@ -106,6 +109,13 @@ class AppRouter {
           );
         },
       ),
+      GoRoute(
+        path: myCourses,
+        builder: (context, state) => BlocProvider(
+          create: (context) => MyCoursesCubit()..fetchSavedCourses(),
+          child: const MyCoursesView(),
+        ),
+      ),
     ],
   );
   static List<String> pages = [
@@ -122,5 +132,6 @@ class AppRouter {
     courseView,
     paymentView,
     paymentMethodView,
+    myCourses,
   ];
 }

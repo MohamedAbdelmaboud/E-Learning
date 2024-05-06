@@ -117,7 +117,7 @@ class HomeViewModel {
       title: 'Typography and Layout Design',
       rating: 4.6,
       studentsCount: 2344,
-      imagePath: 'course10',
+      imagePath: 'course3',
       channelName: 'Visual Communication College',
       description:
           "Visual Communication College's Typography and Layout Design course explores the art and science  ...",
@@ -127,7 +127,7 @@ class HomeViewModel {
       title: 'Adobe Photoshop Mastery',
       rating: 4.6,
       studentsCount: 5325,
-      imagePath: 'course1',
+      imagePath: 'course3',
       channelName: 'Adobe Photoshop Mastery',
       description:
           'Adobe Photoshop Mastery course for aspiring digital artists and photographers. Unlock the full potential of...',
@@ -137,7 +137,7 @@ class HomeViewModel {
       title: 'Product Design and Innovation',
       rating: 4.7,
       studentsCount: 6324,
-      imagePath: 'course2',
+      imagePath: 'course3',
       channelName: 'Digital Arts  Product Design Institute',
       description:
           'This course explores the process of product design from concept to production. Learn design thinking  ...',

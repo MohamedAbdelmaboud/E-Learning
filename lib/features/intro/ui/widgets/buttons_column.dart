@@ -1,6 +1,4 @@
 import 'package:e_learning/common/routing/app_routes.dart';
-import 'package:e_learning/common/utils/app_colors.dart';
-import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/common/widgets/custom_text_button_builder.dart';
 import 'package:e_learning/features/intro/data/models/page_model.dart';
 import 'package:flutter/material.dart';

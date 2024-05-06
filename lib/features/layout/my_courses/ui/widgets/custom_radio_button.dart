@@ -1,5 +1,4 @@
 import 'package:e_learning/common/utils/app_styles.dart';
-import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/widgets/methods_row.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';

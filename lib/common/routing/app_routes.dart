@@ -4,11 +4,12 @@ import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/home/cubit/categories_cubit.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/course_content_view.dart';
 import 'package:e_learning/features/layout/my_courses/cubits/my_courses_cubit.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/my_courses_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
-import 'package:e_learning/intialview.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/transaction_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -17,6 +18,7 @@ import '../../features/auth/ui/views/sign_in_view.dart';
 import '../../features/layout/home/ui/views/home_view.dart';
 import '../../features/layout/home/ui/views/notifications_view.dart';
 import '../../features/layout/my_courses/ui/views/course_view.dart';
+import '../../features/layout/my_courses/ui/views/payment_details.dart';
 import '../../features/layout/profile/ui/views/profile_view.dart';
 
 class AppRouter {
@@ -34,11 +36,20 @@ class AppRouter {
   static String paymentView = '/paymentView';
   static String paymentMethodView = '/paymentMethodView';
   static String myCourses = '/myCourses';
+  static String paymentDetailsView = '/paymentDetailsView';
+  static String transactionView = '/transactionView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
-        builder: (context, state) => const InitialView(),
+        builder: (context, state) => const CourseContentView(),
+      ),
+      GoRoute(
+          path: transactionView,
+          builder: (context, state) => const TransactionView()),
+      GoRoute(
+        path: paymentDetailsView,
+        builder: (context, state) => const PaymentDetailsView(),
       ),
       GoRoute(
         path: paymentMethodView,
@@ -133,5 +144,7 @@ class AppRouter {
     paymentView,
     paymentMethodView,
     myCourses,
+    paymentDetailsView,
+    transactionView
   ];
 }

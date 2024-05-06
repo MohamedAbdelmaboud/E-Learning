@@ -16,7 +16,7 @@ class ProfileInfo extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-        color: AppColors.secondaryColor.withOpacity(0.2),
+        color: AppColors.withOpacity,
         borderRadius: BorderRadius.circular(5),
       ),
       child: Row(

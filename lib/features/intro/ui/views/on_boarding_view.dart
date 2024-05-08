@@ -15,7 +15,20 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   late PageController controller;
   int currentIndex = 0;
-  Container buildDot(int index, BuildContext context) {
+
+  @override
+  void initState() {
+    super.initState();
+    controller = PageController(initialPage: 0);
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  Widget buildDot(int index, BuildContext context) {
     return Container(
       height: 9,
       width: 9,
@@ -30,18 +43,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   @override
-  void initState() {
-    super.initState();
-    controller = PageController(initialPage: 0);
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
@@ -50,7 +51,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         children: [
           Expanded(
             flex: 5,
-            // PageView Builder
             child: PageView.builder(
               controller: controller,
               scrollDirection: Axis.horizontal,
@@ -64,6 +64,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   PageViewBody(pageModel: pages[index]),
+                  const SizedBox(
+                      height:
+                          10), // Add some space between PageViewBody and dots
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: List.generate(
@@ -78,9 +81,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           Expanded(
             flex: 1,
             child: ButtonsColumn(
-                currentIndex: currentIndex, controller: controller),
+              currentIndex: currentIndex,
+              controller: controller,
+            ),
           )
-          // Container created for dots
         ],
       ),
     );

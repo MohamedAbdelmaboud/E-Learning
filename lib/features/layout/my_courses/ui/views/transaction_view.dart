@@ -1,3 +1,4 @@
+import 'package:e_learning/common/routing/app_routes.dart';
 import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/common/utils/assets.dart';
@@ -6,6 +7,7 @@ import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../common/widgets/custom_app_bar.dart';
 
@@ -22,7 +24,7 @@ class TransactionView extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              const PaymentProgress(activeStep: 2),
+              const PaymentProgress(activeStep: 3),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 40.0),
                 child: SvgPicture.asset(Assets.assetsImagesDone),
@@ -51,7 +53,7 @@ class TransactionView extends StatelessWidget {
                 ), //227 w
               ),
               CustomTextButtonBuilder.normalWithText(
-                  text: 'CONTINUE', onTap: () {}),
+                  text: 'CONTINUE', onTap: () {context.push(AppRouter.courseContentView);}),
             ],
           ),
         ));

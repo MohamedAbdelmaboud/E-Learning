@@ -11,7 +11,6 @@ class ProfileView extends StatelessWidget {
     return const Scaffold(
       appBar: CustomAppBar(
         title: 'My Profile',
-        withBackButton: true,
       ),
       body: ProfileViewBody(),
     );

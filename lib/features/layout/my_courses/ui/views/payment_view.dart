@@ -1,8 +1,10 @@
+import 'package:e_learning/common/routing/app_routes.dart';
 import 'package:e_learning/common/widgets/custom_app_bar.dart';
 import 'package:e_learning/common/widgets/custom_text_button_builder.dart';
 import 'package:e_learning/common/widgets/skills_content.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../common/utils/app_colors.dart';
 import '../../../../../common/utils/app_styles.dart';
@@ -43,7 +45,10 @@ class PaymentView extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0),
                 child: CustomTextButtonBuilder.normalWithText(
-                    text: 'Continue', onTap: () {}),
+                    text: 'Continue',
+                    onTap: () {
+                      context.push(AppRouter.paymentMethodView);
+                    }),
               )
             ],
           ),

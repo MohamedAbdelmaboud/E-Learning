@@ -1,9 +1,11 @@
+import 'package:e_learning/common/routing/app_routes.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/common/widgets/custom_text_button_builder.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/widgets/price_row.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 import 'custom_row.dart';
 import 'custom_text_field.dart';
@@ -45,7 +47,10 @@ class PaymentDetailsBody extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
             child: CustomTextButtonBuilder.normalWithText(
-                text: 'Continue', onTap: () {}),
+                text: 'Continue',
+                onTap: () {
+                  context.push(AppRouter.transactionView);
+                }),
           ),
         ],
       ),

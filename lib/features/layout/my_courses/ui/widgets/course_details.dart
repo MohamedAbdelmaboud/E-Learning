@@ -1,8 +1,10 @@
+import 'package:e_learning/common/routing/app_routes.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/common/widgets/underline_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../common/widgets/custom_text_button_builder.dart';
 import '../../../../../common/widgets/skills_content.dart';
@@ -69,7 +71,7 @@ class _CourseDetailsState extends State<CourseDetails> {
           Padding(
             child: CustomTextButtonBuilder.normalWithText(
               text: 'ENROLL NOW',
-              onTap: () {},
+              onTap: () {context.push(AppRouter.paymentView);},
             ),
             padding: const EdgeInsets.symmetric(horizontal: 14),
           ),

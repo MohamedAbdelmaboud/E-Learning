@@ -5,7 +5,6 @@ import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/home/cubit/categories_cubit.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
 import 'package:e_learning/features/layout/my_courses/cubits/my_courses_cubit.dart';
-import 'package:e_learning/features/layout/my_courses/ui/views/course_content_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/my_courses_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_method_view.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
@@ -15,11 +14,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/ui/views/sign_in_view.dart';
-import '../../features/layout/home/ui/views/home_view.dart';
+import '../../features/layout/home/ui/views/layout_view.dart';
 import '../../features/layout/home/ui/views/notifications_view.dart';
+import '../../features/layout/my_courses/ui/views/course_content_view.dart';
 import '../../features/layout/my_courses/ui/views/course_view.dart';
 import '../../features/layout/my_courses/ui/views/payment_details.dart';
 import '../../features/layout/profile/ui/views/profile_view.dart';
+import '../../features/splash/ui/views/splash_view.dart';
 
 class AppRouter {
   static String splashView = '/';
@@ -38,11 +39,13 @@ class AppRouter {
   static String myCourses = '/myCourses';
   static String paymentDetailsView = '/paymentDetailsView';
   static String transactionView = '/transactionView';
+  static String myCoursesView = '/myCoursesView';
+  static String courseContentView = '/courseContentView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
         path: splashView,
-        builder: (context, state) => const CourseContentView(),
+        builder: (context, state) => const SplashView(),
       ),
       GoRoute(
           path: transactionView,
@@ -96,6 +99,10 @@ class AppRouter {
         builder: (context, state) => const NotificationsView(),
       ),
       GoRoute(
+        path: courseContentView,
+        builder: (context, state) => const CourseContentView(),
+      ),
+      GoRoute(
         path: homeView,
         pageBuilder: (context, state) {
           return CustomTransitionPage(
@@ -105,8 +112,12 @@ class AppRouter {
                 BlocProvider(
                   create: (context) => CategoriesCubit()..fetchData(),
                 ),
+                BlocProvider(
+                  create: (context) => MyCoursesCubit()..fetchSavedCourses(),
+                  child: const MyCoursesView(),
+                ),
               ],
-              child: const HomeView(),
+              child: const LayoutView(),
             ),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
@@ -122,10 +133,7 @@ class AppRouter {
       ),
       GoRoute(
         path: myCourses,
-        builder: (context, state) => BlocProvider(
-          create: (context) => MyCoursesCubit()..fetchSavedCourses(),
-          child: const MyCoursesView(),
-        ),
+        builder: (context, state) => const MyCoursesView(),
       ),
     ],
   );

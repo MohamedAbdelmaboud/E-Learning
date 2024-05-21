@@ -1,9 +1,11 @@
+import 'package:e_learning/common/routing/app_routes.dart';
 import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/features/layout/home/data/models/course_model.dart';
 import 'package:e_learning/features/layout/my_courses/cubits/my_courses_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 class MyCoursesListViewItem extends StatelessWidget {
   const MyCoursesListViewItem({
@@ -29,8 +31,8 @@ class MyCoursesListViewItem extends StatelessWidget {
               Image.asset(
                 'assets/images/${course.imagePath}.png',
                 width: 130,
-                height: 145,
-                fit: BoxFit.cover,
+                height: 140,
+                fit: BoxFit.fill,
               ),
               const Gap(15),
               Expanded(
@@ -87,12 +89,14 @@ class MyCoursesListViewItem extends StatelessWidget {
     );
   }
 
-  Widget _buildSavedCoursesBottom() {
+  Widget _buildSavedCoursesBottom(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            context.push(AppRouter.courseView, extra: 'assets/images/${course.imagePath}.png');
+          },
           child: Container(
             decoration: BoxDecoration(
               color: AppColors.primaryColor,
@@ -145,7 +149,7 @@ class MyCoursesListViewItem extends StatelessWidget {
     );
   }
 
-  _buildCompletedCoursesBottom() {
+  Widget _buildCompletedCoursesBottom() {
     return GestureDetector(
       onTap: () {},
       child: Container(
@@ -168,7 +172,7 @@ class MyCoursesListViewItem extends StatelessWidget {
   Widget _courseCardBottomBuilder(context) {
     int index = MyCoursesCubit.get(context).index;
     if (index == 0) {
-      return _buildSavedCoursesBottom();
+      return _buildSavedCoursesBottom(context);
     } else if (index == 1) {
       return _buildOnProgressCoursesBottom();
     } else if (index == 2) {

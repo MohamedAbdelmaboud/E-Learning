@@ -64,7 +64,7 @@ class AppRouter {
       ),
       GoRoute(
         path: courseView,
-        builder: (context, state) => const CourseView(),
+        builder: (context, state) =>  CourseView(coursePath:  state.extra as String),
       ),
       GoRoute(
         path: profileView,
@@ -100,7 +100,8 @@ class AppRouter {
       ),
       GoRoute(
         path: courseContentView,
-        builder: (context, state) => const CourseContentView(),
+        // todo: fixed course path
+        builder: (context, state) => const CourseContentView('assets/images/course1.png'),
       ),
       GoRoute(
         path: homeView,

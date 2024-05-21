@@ -1,35 +1,18 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/course_video.dart';
-import '../widgets/course_details.dart';
+import '../widgets/course_view_body.dart';
 
 class CourseView extends StatelessWidget {
-  const CourseView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: CourseViewBody(),
-    );
-  }
-}
-
-class CourseViewBody extends StatelessWidget {
-  const CourseViewBody({
+  const CourseView({
     super.key,
+    required this.coursePath,
   });
+  final String coursePath;
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            CourseVideo(),
-            CourseDetails(),
-          ],
-        ),
-      ),
+    return Scaffold(
+      body: CourseViewBody(coursePath),
     );
   }
 }

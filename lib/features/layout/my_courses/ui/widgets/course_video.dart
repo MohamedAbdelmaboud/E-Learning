@@ -1,11 +1,12 @@
 import 'package:e_learning/common/utils/app_colors.dart';
-import 'package:e_learning/common/utils/assets.dart';
 import 'package:flutter/material.dart';
 
 class CourseVideo extends StatelessWidget {
-  const CourseVideo({
+  const CourseVideo(
+    this.coursePath, {
     super.key,
   });
+  final String coursePath;
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +16,10 @@ class CourseVideo extends StatelessWidget {
         Container(
           height: 177,
           width: double.infinity,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.fill,
-              image: AssetImage(Assets.assetsImagesImage),
+              image: AssetImage(coursePath),
             ),
           ),
         ),

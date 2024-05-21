@@ -18,8 +18,9 @@ class ContinueWatchingCourseImage extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/$imagePath.png',
-            fit: BoxFit.cover,
-            width: 90,
+            width: 120,
+            height: 90,
+            fit: BoxFit.fill,
           ),
         ],
       ),

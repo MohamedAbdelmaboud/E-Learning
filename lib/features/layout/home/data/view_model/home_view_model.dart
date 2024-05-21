@@ -22,146 +22,125 @@ class HomeViewModel {
   static const List<CourseModel> _courses = [
     CourseModel(
       id: 1,
-      title: 'UI/UX Design Essentials',
+      title: 'Flutter Development for Beginners',
       rating: 4.8,
       studentsCount: 3457,
-      imagePath: 'course3',
-      channelName: 'Tech Innovations University',
+      imagePath: 'course1',
+      channelName: 'Flutter Academy',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'Learn the basics of Flutter development and build your first mobile app.',
       progress: 73,
     ),
     CourseModel(
       id: 2,
-      title: 'Graphic Design Fundamentals',
+      title: 'Advanced Flutter Techniques',
       rating: 4.6,
       studentsCount: 5325,
       imagePath: 'course2',
-      channelName: 'Creative Arts Institute',
+      channelName: 'Flutter Academy',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'Dive deeper into Flutter with advanced techniques and best practices.',
       progress: 40,
     ),
     CourseModel(
       id: 3,
-      title: 'Typography and Layout Design',
+      title: 'Flutter Widgets and State Management',
       rating: 4.7,
       studentsCount: 6324,
       imagePath: 'course3',
-      channelName: 'Creative Arts Institute',
+      channelName: 'Flutter Academy',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'Master Flutter widgets and state management to create dynamic apps.',
     ),
     CourseModel(
       id: 4,
-      title: 'Branding and Identity Design',
+      title: 'JavaScript Essentials',
       rating: 4.8,
       studentsCount: 4234,
       imagePath: 'course4',
-      channelName: 'Innovation and Design School',
-      description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+      channelName: 'JS World',
+      description: 'A comprehensive guide to the fundamentals of JavaScript.',
     ),
     CourseModel(
       id: 5,
-      title: 'Web Design Fundamentals',
+      title: 'JavaScript for Web Development',
       rating: 4.6,
       studentsCount: 2344,
-      imagePath: 'course3',
-      channelName: 'Web Development University',
+      imagePath: 'course5',
+      channelName: 'JS World',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'Learn how to use JavaScript to build interactive web applications.',
     ),
     CourseModel(
       id: 6,
-      title: 'Animation and Motion Graphics',
+      title: 'Modern JavaScript Frameworks',
       rating: 4.7,
       studentsCount: 6324,
-      imagePath: 'course4',
-      channelName: 'Animation Institute of Digital Arts',
+      imagePath: 'course6',
+      channelName: 'JS World',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'Explore modern JavaScript frameworks like React, Vue, and Angular.',
     ),
     CourseModel(
       id: 7,
-      title: 'Game Design and Development',
+      title: 'Python for Beginners',
       rating: 4.8,
       studentsCount: 4234,
-      imagePath: 'course3',
-      channelName: 'Game Development Academy',
+      imagePath: 'course7',
+      channelName: 'Python Hub',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'An introduction to Python programming for complete beginners.',
     ),
     CourseModel(
       id: 8,
-      title: 'Product Design and Innovation',
+      title: 'Intermediate Python Programming',
       rating: 4.6,
       studentsCount: 2344,
-      imagePath: 'course3',
-      channelName: 'Product Design Institute',
+      imagePath: 'course8',
+      channelName: 'Python Hub',
       description:
-          'UI/UX Design Essentials course to learn the essential skills for designing intuitive and user-friendly interfaces...',
+          'Take your Python skills to the next level with this intermediate course.',
     ),
     CourseModel(
       id: 9,
-      title: 'Branding and Identity Design',
+      title: 'Python for Data Science',
       rating: 4.8,
       studentsCount: 4234,
-      imagePath: 'course4',
-      channelName: 'Brand Strategy College',
+      imagePath: 'course9',
+      channelName: 'Python Hub',
       description:
-          'This course explores the fundamentals of branding, brand strategy, and visual identity design. Learn how to ...',
+          'Learn Python for data analysis, visualization, and machine learning.',
     ),
     CourseModel(
       id: 10,
-      title: 'Typography and Layout Design',
+      title: 'Advanced Python Techniques',
       rating: 4.6,
       studentsCount: 2344,
-      imagePath: 'course3',
-      channelName: 'Visual Communication College',
+      imagePath: 'course10',
+      channelName: 'Python Hub',
       description:
-          "Visual Communication College's Typography and Layout Design course explores the art and science  ...",
-    ),
-    CourseModel(
-      id: 11,
-      title: 'Adobe Photoshop Mastery',
-      rating: 4.6,
-      studentsCount: 5325,
-      imagePath: 'course3',
-      channelName: 'Adobe Photoshop Mastery',
-      description:
-          'Adobe Photoshop Mastery course for aspiring digital artists and photographers. Unlock the full potential of...',
-    ),
-    CourseModel(
-      id: 12,
-      title: 'Product Design and Innovation',
-      rating: 4.7,
-      studentsCount: 6324,
-      imagePath: 'course3',
-      channelName: 'Digital Arts  Product Design Institute',
-      description:
-          'This course explores the process of product design from concept to production. Learn design thinking  ...',
+          'Master advanced Python programming techniques and best practices.',
     ),
   ];
-
-  static List<CourseModel> get inProgressCourses =>
-      _repeatCourses(_courses.sublist(0, 2), count: 1);
 
   static List<CourseModel> get suggestionsCourses =>
       _repeatCourses(_courses.sublist(2, 5));
 
-  static List<CourseModel> get topCourses =>
-      _repeatCourses(_courses.sublist(5, 8));
+  static List<CourseModel> get inProgressCourses =>
+      _repeatCourses(_courses.sublist(0, 2), count: 1);
 
   static List<CourseModel> get savedCourses =>
-      _repeatCourses(_courses.sublist(8, 10));
+      _repeatCourses(_courses.sublist(2, 6), count: 1);
 
   static List<CourseModel> get completeCourses =>
-      _repeatCourses(_courses.sublist(10, 12));
+      _repeatCourses(_courses.sublist(6, 10), count: 1);
+
+  static List<CourseModel> get topCourses =>
+      _repeatCourses(_courses.sublist(7, 10));
 
   static List<CourseModel> _repeatCourses(
     List<CourseModel> courses, {
-    int count = 10,
+    int count = 5,
   }) {
     return List.generate(
         courses.length * count, (index) => courses[index % courses.length]);

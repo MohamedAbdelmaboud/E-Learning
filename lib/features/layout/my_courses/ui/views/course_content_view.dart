@@ -10,7 +10,8 @@ import '../widgets/course_head_text.dart';
 import '../widgets/course_video.dart';
 
 class CourseContentView extends StatelessWidget {
-  const CourseContentView({super.key});
+  const CourseContentView(this.coursePath, {super.key});
+  final String coursePath;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class CourseContentView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const CourseVideo(),
+              CourseVideo(coursePath),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(
@@ -51,7 +52,8 @@ class CourseContentView extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.symmetric(vertical: 12,horizontal: 16),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 12, horizontal: 16),
                       decoration: BoxDecoration(
                         color: AppColors.withOpacity,
                         borderRadius: BorderRadius.circular(5),

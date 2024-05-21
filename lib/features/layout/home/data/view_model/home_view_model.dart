@@ -144,13 +144,26 @@ class HomeViewModel {
     ),
   ];
 
-  static List<CourseModel> get inProgressCourses => _courses.sublist(0, 2);
+  static List<CourseModel> get inProgressCourses =>
+      _repeatCourses(_courses.sublist(0, 2), count: 1);
 
-  static List<CourseModel> get suggestionsCourses => _courses.sublist(2, 5);
+  static List<CourseModel> get suggestionsCourses =>
+      _repeatCourses(_courses.sublist(2, 5));
 
-  static List<CourseModel> get topCourses => _courses.sublist(5, 8);
+  static List<CourseModel> get topCourses =>
+      _repeatCourses(_courses.sublist(5, 8));
 
-  static List<CourseModel> get savedCourses => _courses.sublist(8, 10);
+  static List<CourseModel> get savedCourses =>
+      _repeatCourses(_courses.sublist(8, 10));
 
-  static List<CourseModel> get completeCourses => _courses.sublist(10, 12);
+  static List<CourseModel> get completeCourses =>
+      _repeatCourses(_courses.sublist(10, 12));
+
+  static List<CourseModel> _repeatCourses(
+    List<CourseModel> courses, {
+    int count = 10,
+  }) {
+    return List.generate(
+        courses.length * count, (index) => courses[index % courses.length]);
+  }
 }

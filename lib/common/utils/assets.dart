@@ -1,6 +1,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesAbdo
+  /// assets/images/abdo.jpg
+  static const String assetsImagesAbdo = "assets/images/abdo.jpg";
+
   /// Assets for assetsImagesBook
   /// assets/images/book.svg
   static const String assetsImagesBook = "assets/images/book.svg";
@@ -97,10 +101,6 @@ class Assets {
   /// assets/images/help.svg
   static const String assetsImagesHelp = "assets/images/help.svg";
 
-  /// Assets for assetsImagesImage
-  /// assets/images/image.png
-  static const String assetsImagesImage = "assets/images/image.png";
-
   /// Assets for assetsImagesImageSvg
   /// assets/images/imageSvg.svg
   static const String assetsImagesImageSvg = "assets/images/imageSvg.svg";
@@ -149,6 +149,10 @@ class Assets {
   /// assets/images/myCertificates.svg
   static const String assetsImagesMyCertificates = "assets/images/myCertificates.svg";
 
+  /// Assets for assetsImagesOmar
+  /// assets/images/omar.jpg
+  static const String assetsImagesOmar = "assets/images/omar.jpg";
+
   /// Assets for assetsImagesOnlinelearningAmico
   /// assets/images/Onlinelearning-amico.svg
   static const String assetsImagesOnlinelearningAmico = "assets/images/Onlinelearning-amico.svg";
@@ -165,9 +169,17 @@ class Assets {
   /// assets/images/playButton.svg
   static const String assetsImagesPlayButton = "assets/images/playButton.svg";
 
+  /// Assets for assetsImagesRashad
+  /// assets/images/rashad.jpg
+  static const String assetsImagesRashad = "assets/images/rashad.jpg";
+
   /// Assets for assetsImagesSend
   /// assets/images/send.svg
   static const String assetsImagesSend = "assets/images/send.svg";
+
+  /// Assets for assetsImagesTharwat
+  /// assets/images/tharwat.jpg
+  static const String assetsImagesTharwat = "assets/images/tharwat.jpg";
 
   /// Assets for assetsImagesTime
   /// assets/images/time.svg

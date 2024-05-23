@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        title: 'Welcome Rashad',
+        title: 'Welcome Mohamed',
         actionIcon: Icons.notifications,
         actionOnPressed: () => context.push(AppRouter.notificationsView),
       ),

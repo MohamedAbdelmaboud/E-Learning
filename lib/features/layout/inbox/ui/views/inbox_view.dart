@@ -11,6 +11,7 @@ class InboxView extends StatelessWidget {
     return const Scaffold(
       appBar: CustomAppBar(
         title: 'Inbox',
+        actionIcon: Icons.message_outlined,
       ),
       body: InboxVIewBody(),
     );

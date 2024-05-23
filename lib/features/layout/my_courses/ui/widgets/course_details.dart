@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../../common/widgets/custom_text_button_builder.dart';
 import '../../../../../common/widgets/skills_content.dart';
+import '../../../home/data/models/course_model.dart';
 import '../widgets/cousre_items_builder.dart';
 import '../widgets/see_more_text.dart';
 import '../widgets/text_column.dart';
@@ -16,16 +17,15 @@ import 'course_head_text.dart';
 class CourseDetails extends StatefulWidget {
   const CourseDetails({
     super.key,
+    required this.courseModel,
   });
-
+  final CourseModel courseModel;
   @override
   State<CourseDetails> createState() => _CourseDetailsState();
 }
 
 class _CourseDetailsState extends State<CourseDetails> {
   bool readMore = false;
-  String text =
-      "Visual Communication College's Typography and Layout Design course explores the art and science of typography and layout composition. Learn how to effectively use typefaces, hierarchy, alignment, and grid systems to create visually compelling designs. Gain hands-on experience in editorial design, branding, and digital layouts";
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -34,7 +34,7 @@ class _CourseDetailsState extends State<CourseDetails> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            'Typography and Layout Design',
+            widget.courseModel.title,
             style: AppStyles.bold21,
           ),
           Padding(
@@ -42,7 +42,9 @@ class _CourseDetailsState extends State<CourseDetails> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const TextColumn(),
+                TextColumn(
+                  courseModel: widget.courseModel,
+                ),
                 Text(
                   r'35$',
                   style: AppStyles.bold21,
@@ -55,7 +57,7 @@ class _CourseDetailsState extends State<CourseDetails> {
           const Gap(10),
           SeeMoreText(
             readMore: readMore,
-            text: text,
+            text: widget.courseModel.description,
             onTap: () {
               setState(() {
                 readMore = !readMore;
@@ -71,7 +73,9 @@ class _CourseDetailsState extends State<CourseDetails> {
           Padding(
             child: CustomTextButtonBuilder.normalWithText(
               text: 'ENROLL NOW',
-              onTap: () {context.push(AppRouter.paymentView);},
+              onTap: () {
+                context.push(AppRouter.paymentView);
+              },
             ),
             padding: const EdgeInsets.symmetric(horizontal: 14),
           ),

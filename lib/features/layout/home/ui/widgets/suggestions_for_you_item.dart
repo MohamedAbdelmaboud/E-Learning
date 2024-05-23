@@ -18,8 +18,10 @@ class SuggestionsForYouItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.push(AppRouter.courseView,
-            extra: 'assets/images/${course.imagePath}.png');
+        context.push(
+          AppRouter.courseView,
+          extra: course,
+        );
       },
       child: SizedBox(
         width: 150,

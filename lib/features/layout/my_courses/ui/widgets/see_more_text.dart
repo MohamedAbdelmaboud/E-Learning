@@ -20,7 +20,7 @@ class SeeMoreText extends StatelessWidget {
           TextSpan(
             text: readMore
                 ? text
-                : '${text.substring(0, 200)}${readMore ? '' : '...'}',
+                : '${text.substring(0, text.length)}${readMore ? '' : '...'}',
             style: AppStyles.regular12.copyWith(letterSpacing: 1.2),
           ),
           WidgetSpan(

@@ -2,21 +2,25 @@ import 'package:e_learning/features/layout/my_courses/ui/widgets/course_details.
 import 'package:e_learning/features/layout/my_courses/ui/widgets/course_video.dart';
 import 'package:flutter/material.dart';
 
+import '../../../home/data/models/course_model.dart';
+
 class CourseViewBody extends StatelessWidget {
   const CourseViewBody(
-    this.coursePath, {
+    this.courseModel, {
     super.key,
   });
 
-  final String coursePath;
+  final CourseModel courseModel;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
           children: [
-            CourseVideo(coursePath),
-            const CourseDetails(),
+            const CourseVideo(),
+            CourseDetails(
+              courseModel: courseModel,
+            ),
           ],
         ),
       ),

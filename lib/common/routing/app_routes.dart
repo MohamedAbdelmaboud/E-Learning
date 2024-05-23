@@ -3,6 +3,7 @@ import 'package:e_learning/features/auth/ui/views/sign_up_view.dart';
 import 'package:e_learning/features/auth/ui/views/unlock_view.dart';
 import 'package:e_learning/features/intro/ui/views/on_boarding_view.dart';
 import 'package:e_learning/features/layout/home/cubit/categories_cubit.dart';
+import 'package:e_learning/features/layout/home/data/models/course_model.dart';
 import 'package:e_learning/features/layout/inbox/ui/views/inbox_view.dart';
 import 'package:e_learning/features/layout/my_courses/cubits/my_courses_cubit.dart';
 import 'package:e_learning/features/layout/my_courses/ui/views/my_courses_view.dart';
@@ -64,7 +65,8 @@ class AppRouter {
       ),
       GoRoute(
         path: courseView,
-        builder: (context, state) =>  CourseView(coursePath:  state.extra as String),
+        builder: (context, state) =>
+            CourseView(courseModel: state.extra as CourseModel),
       ),
       GoRoute(
         path: profileView,
@@ -101,7 +103,8 @@ class AppRouter {
       GoRoute(
         path: courseContentView,
         // todo: fixed course path
-        builder: (context, state) => const CourseContentView('assets/images/course1.png'),
+        builder: (context, state) =>
+            const CourseContentView('assets/images/course1.png'),
       ),
       GoRoute(
         path: homeView,

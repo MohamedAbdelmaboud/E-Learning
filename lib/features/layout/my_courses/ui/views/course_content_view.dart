@@ -20,7 +20,7 @@ class CourseContentView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              CourseVideo(coursePath),
+              const CourseVideo(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(

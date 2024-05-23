@@ -20,23 +20,7 @@ class InboxVIewBody extends StatelessWidget {
               text: 'New',
             ),
             Gap(18),
-            InboxItemListView(
-              itemCount: 2,
-            ),
-            CustomRow(
-              text: 'Earlier',
-            ),
-            Gap(18),
-            InboxItemListView(
-              itemCount: 3,
-            ),
-            CustomRow(
-              text: 'New',
-            ),
-            Gap(18),
-            InboxItemListView(
-              itemCount: 3,
-            ),
+            InboxItemListView(),
           ],
         ),
       ),

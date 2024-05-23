@@ -1,12 +1,13 @@
-import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
+import 'package:e_learning/features/layout/my_courses/ui/views/payment_details.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:go_router/go_router.dart';
 
-import '../../../../../common/routing/app_routes.dart';
+import '../../../../../common/helpers/push_with_slide_transition.dart';
 import '../../../../../common/widgets/custom_app_bar.dart';
 import '../../../../../common/widgets/custom_text_button_builder.dart';
 import '../widgets/custom_radio_button.dart';
+import '../widgets/payment_head_text.dart';
+import '../widgets/payment_progress.dart';
 import '../widgets/price_row.dart';
 
 class PaymentMethodView extends StatelessWidget {
@@ -43,10 +44,14 @@ class PaymentMethodView extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0),
                 child: CustomTextButtonBuilder.normalWithText(
-                    text: 'Continue',
-                    onTap: () {
-                      context.push(AppRouter.paymentDetailsView);
-                    }),
+                  text: 'Continue',
+                  onTap: () {
+                    pushWithSlideTransition(
+                      context,
+                      const PaymentDetailsView(),
+                    );
+                  },
+                ),
               ),
             ],
           ),

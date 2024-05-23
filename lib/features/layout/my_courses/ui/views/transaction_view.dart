@@ -3,13 +3,13 @@ import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/common/utils/assets.dart';
 import 'package:e_learning/common/widgets/custom_text_button_builder.dart';
-import 'package:e_learning/features/layout/my_courses/ui/views/payment_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../common/widgets/custom_app_bar.dart';
+import '../widgets/payment_progress.dart';
 
 class TransactionView extends StatelessWidget {
   const TransactionView({super.key});
@@ -53,7 +53,10 @@ class TransactionView extends StatelessWidget {
                 ), //227 w
               ),
               CustomTextButtonBuilder.normalWithText(
-                  text: 'CONTINUE', onTap: () {context.push(AppRouter.courseContentView);}),
+                  text: 'CONTINUE',
+                  onTap: () {
+                    context.push(AppRouter.courseContentView);
+                  }),
             ],
           ),
         ));

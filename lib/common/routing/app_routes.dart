@@ -102,9 +102,7 @@ class AppRouter {
       ),
       GoRoute(
         path: courseContentView,
-        // todo: fixed course path
-        builder: (context, state) =>
-            const CourseContentView('assets/images/course1.png'),
+        builder: (context, state) => const CourseContentView(),
       ),
       GoRoute(
         path: homeView,

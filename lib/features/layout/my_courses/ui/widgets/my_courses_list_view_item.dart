@@ -95,7 +95,7 @@ class MyCoursesListViewItem extends StatelessWidget {
       children: [
         GestureDetector(
           onTap: () {
-            context.push(AppRouter.courseView, extra: 'assets/images/${course.imagePath}.png');
+            context.push(AppRouter.courseView, extra: course);
           },
           child: Container(
             decoration: BoxDecoration(

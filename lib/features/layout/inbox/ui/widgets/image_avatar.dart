@@ -11,14 +11,15 @@ class ImageAvatar extends StatelessWidget {
     return Container(
       height: 70,
       width: 70,
-      decoration:  BoxDecoration(
-          shape: BoxShape.circle,
-          image: DecorationImage(
-            fit: BoxFit.fill,
-            image: AssetImage(
-              imagePath,
-            ),
-          )),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        image: DecorationImage(
+          fit: BoxFit.fill,
+          image: AssetImage(
+            imagePath,
+          ),
+        ),
+      ),
     );
   }
 }

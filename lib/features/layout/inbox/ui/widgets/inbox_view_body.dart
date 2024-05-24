@@ -16,7 +16,7 @@ class InboxVIewBody extends StatelessWidget {
         clipBehavior: Clip.none,
         child: Column(
           children: [
-            CustomRow(
+            CustomTitleRow(
               text: 'New',
             ),
             Gap(18),

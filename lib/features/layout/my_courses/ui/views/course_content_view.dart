@@ -1,4 +1,5 @@
 import 'package:e_learning/common/utils/assets.dart';
+import 'package:e_learning/features/layout/my_courses/ui/widgets/course_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
@@ -7,11 +8,9 @@ import '../../../../../common/utils/app_colors.dart';
 import '../../../../../common/utils/app_styles.dart';
 import '../../../../../common/widgets/custom_text_button.dart';
 import '../widgets/course_head_text.dart';
-import '../widgets/course_video.dart';
 
 class CourseContentView extends StatelessWidget {
-  const CourseContentView(this.coursePath, {super.key});
-  final String coursePath;
+  const CourseContentView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class CourseContentView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const CourseVideo(),
+              const CourseImage(coursePath: 'course5'),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(

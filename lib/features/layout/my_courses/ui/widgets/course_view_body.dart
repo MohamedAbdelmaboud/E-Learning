@@ -17,7 +17,8 @@ class CourseViewBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const CourseVideo(),
+            // todo: change Course video to course image
+            // const CourseVideo(),
             CourseDetails(
               courseModel: courseModel,
             ),

@@ -4,8 +4,8 @@ import 'package:e_learning/features/layout/home/data/models/course_model.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-class TextColumn extends StatelessWidget {
-  const TextColumn({
+class CourseChannel extends StatelessWidget {
+  const CourseChannel({
     super.key,
     required this.courseModel,
   });

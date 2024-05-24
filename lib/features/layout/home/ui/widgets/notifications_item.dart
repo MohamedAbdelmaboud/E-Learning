@@ -2,8 +2,10 @@ import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:e_learning/features/layout/home/data/models/notifications_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+
+import 'notifaction_description.dart';
+import 'notifaction_icon.dart';
 
 class NotificationsItem extends StatelessWidget {
   const NotificationsItem({
@@ -26,28 +28,9 @@ class NotificationsItem extends StatelessWidget {
           children: [
             Row(
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(99),
-                  child: SvgPicture.asset(
-                    model.imagePath,
-                    height: 40,
-                  ),
-                ),
+                NotifactionIcon(model: model),
                 const Gap(20),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      model.title,
-                      style: AppStyles.bold14,
-                    ),
-                    const Gap(5),
-                    Text(
-                      model.description,
-                      style: AppStyles.regular12,
-                    )
-                  ],
-                ),
+                NotifactionDescription(model: model),
               ],
             ),
             const Gap(20),

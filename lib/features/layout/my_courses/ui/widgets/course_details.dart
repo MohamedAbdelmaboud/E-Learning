@@ -11,8 +11,8 @@ import '../../../../../common/widgets/skills_content.dart';
 import '../../../home/data/models/course_model.dart';
 import '../widgets/cousre_items_builder.dart';
 import '../widgets/see_more_text.dart';
-import '../widgets/text_column.dart';
 import 'course_head_text.dart';
+import 'course_info.dart';
 
 class CourseDetails extends StatefulWidget {
   const CourseDetails({
@@ -37,20 +37,8 @@ class _CourseDetailsState extends State<CourseDetails> {
             widget.courseModel.title,
             style: AppStyles.bold21,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 5.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                TextColumn(
-                  courseModel: widget.courseModel,
-                ),
-                Text(
-                  r'35$',
-                  style: AppStyles.bold21,
-                ),
-              ],
-            ),
+          CourseInfo(
+            courseModel: widget.courseModel,
           ),
           const Gap(10),
           const CourseHeadText(text: 'Course Details'),
@@ -64,24 +52,22 @@ class _CourseDetailsState extends State<CourseDetails> {
               });
             },
           ),
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 24.0),
-            child: CousreItemsBuilder(),
-          ),
+          const CourseItemsBuilder(),
           const SkillsContent(),
           const Gap(35),
           Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 14),
             child: CustomTextButtonBuilder.normalWithText(
               text: 'ENROLL NOW',
               onTap: () {
                 context.push(AppRouter.paymentView);
               },
             ),
-            padding: const EdgeInsets.symmetric(horizontal: 14),
           ),
           const Gap(20),
           const Center(
-              child: UnderlineText(text: 'Start your 7-day free Trial'))
+            child: UnderlineText(text: 'Start your 7-day free Trial'),
+          )
         ],
       ),
     );

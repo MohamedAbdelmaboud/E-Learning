@@ -4,9 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 import '../../data/models/inbox_item_model.dart';
-import 'chat_column.dart';
-import 'image_avatar.dart';
-import 'small_container.dart';
+import 'message_item.dart';
+import 'num_of_messages_container.dart';
 
 class InboxItem extends StatelessWidget {
   const InboxItem({
@@ -17,21 +16,10 @@ class InboxItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-      Row(
-        children: [
-          ImageAvatar(
-            imagePath: inboxItemModel.imagePath,
-          ),
-          const Gap(20),
-          ChatColumn(
-            title: inboxItemModel.title,
-            subTitle: inboxItemModel.subTitle,
-          ),
-        ],
-      ),
+      MessageItem(inboxItemModel: inboxItemModel),
       Column(
         children: [
-          const SmallContainer(),
+          const NumOfMessagesContainer(),
           const Gap(5),
           Text(
             '7.00 Pm',

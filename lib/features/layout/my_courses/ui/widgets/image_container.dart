@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
-class ImageAvatar extends StatelessWidget {
-  const ImageAvatar({
+class ImageContainer extends StatelessWidget {
+  const ImageContainer({
     super.key,
-    required this.imagePath,
+    required this.coursePath,
   });
-  final String imagePath;
+
+  final String coursePath;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
-      width: 70,
+      height: 177,
+      width: double.infinity,
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
         image: DecorationImage(
           fit: BoxFit.fill,
-          image: AssetImage(
-            imagePath,
-          ),
+          image: AssetImage('assets/images/$coursePath.png'),
         ),
       ),
     );

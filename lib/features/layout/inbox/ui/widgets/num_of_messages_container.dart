@@ -2,8 +2,8 @@ import 'package:e_learning/common/utils/app_colors.dart';
 import 'package:e_learning/common/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-class SmallContainer extends StatelessWidget {
-  const SmallContainer({
+class NumOfMessagesContainer extends StatelessWidget {
+  const NumOfMessagesContainer({
     super.key,
   });
 

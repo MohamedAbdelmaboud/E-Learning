@@ -26,7 +26,7 @@ class ButtonsColumn extends StatelessWidget {
           width: MediaQuery.sizeOf(context).width * 0.57,
           onTap: () {
             currentIndex == pages.length - 1
-                ? context.go(AppRouter.unlockView)
+                ? context.push(AppRouter.unlockView)
                 : controller.nextPage(
                     duration: const Duration(milliseconds: 250),
                     curve: Curves.easeInOut,
